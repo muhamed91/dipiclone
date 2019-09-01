@@ -1,0 +1,239 @@
+.navbar__layout {
+    border: 1px solid $greyE5;
+    display: grid;
+    grid-template-columns: 440px auto 200px 240px;
+
+
+    grid-template-rows: 64px;
+    align-items: center;
+    position: fixed;
+    width: 1440px;
+
+    @include mobile {
+        width: auto;
+        grid-template-columns: 245px auto 64px 64px;
+    }
+
+    background-color: $white;
+    z-index: 1;
+    top: 0;
+
+
+
+
+    .navbar__menu {
+
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-items: center;
+        @include smoothFade;
+
+        &--hamburger {
+            height: 100%;
+            width: 25px;
+            margin-left: 24px;
+            cursor: pointer;
+
+            .menu-ham {
+                @include smoothFade;
+                fill: $black;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            a {
+                color: $grey;
+            }
+
+            .menu-ham {
+                fill: $grey;
+            }
+
+
+        }
+
+        &--pointer {
+
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: 'Proxima_Bold';
+            font-size: 17px;
+            color: $black;
+            margin-left: 12px;
+            @include smoothFade;
+            cursor: pointer;
+            padding: 10px 10px 10px 0;
+
+
+
+        }
+    }
+
+
+    &--login {
+        border-left: 1px solid $greyE5;
+        border-right: 1px solid $greyE5;
+        height: 100%;
+        grid-column: 3/4;
+        display: flex;
+        align-items: center;
+        @include smoothFade;
+        padding-left: 12px;
+        cursor: pointer;
+
+        .login-bg {
+            fill: $greyC2;
+            @include smoothFade;
+        }
+
+
+        .profile-img {
+            margin-left: 12px;
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+
+        &:hover,
+        &:focus {
+            background-color: $greyC2;
+
+            a {
+                color: $black;
+            }
+
+            .login-bg {
+                fill: $black;
+            }
+
+
+
+
+
+        }
+
+
+
+        &--pointer {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: 'Proxima_Bold';
+            font-size: 17px;
+            color: $greyC2;
+            cursor: pointer;
+            padding: 10px 10px 10px 12px;
+            @include smoothFade;
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+    }
+
+    &--brand {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+
+
+        &--logo {
+            width: 150px;
+
+            @include mobile {
+                display: none;
+            }
+
+        }
+
+
+    }
+
+    &--ticket {
+        grid-column: 4/5;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        @include smoothFade;
+        padding-left: 12px;
+
+        .tc-seller {
+            fill: $greyC2;
+            @include smoothFade;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $greyC2;
+
+            a {
+                color: $black;
+            }
+
+            .tc-seller {
+                fill: $black;
+            }
+
+
+        }
+
+
+        &--pointer {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: 'Proxima_Bold';
+            font-size: 17px;
+            color: $greyC2;
+            margin-left: 12px;
+            cursor: pointer;
+            padding: 10px 10px 10px 0;
+
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+
+
+
+}
+
+
+// Fade in and out clasee
+
+.fadein {
+    animation: fadein 0.3s;
+    -webkit-animation: fadein 0.3s;
+}
+
+.fadeout {
+    animation: fadeout 0.3s;
+    -webkit-animation: fadeout 0.3s;
+}
+
+
+// AnimaitonSmooth for fade-in and Fade-out
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

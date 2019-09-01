@@ -1,0 +1,257 @@
+.big__teaser--festival {
+    height: 1289px;
+    width: 100%;
+    background-image: url('../assets/img/BigFestival.png');
+    background-size: cover;
+
+    @include mobile {
+        height: 375px;
+        width: auto;
+    }
+
+
+
+
+    &-border {
+
+        background-color: #00D79F;
+        display: block;
+        width: 100%;
+
+
+
+    }
+
+    &-heading {
+        @include festivalHeading;
+        padding-left: 120px;
+        position: relative;
+        top: -75px;
+
+
+        @include mobile {
+            @include festHeading;
+            padding-left: 20px;
+            top: -25px;
+
+        }
+
+        @include mobile {
+            padding-bottom: 35px;
+        }
+
+
+    }
+
+
+}
+
+.big__teaser--festival-countdown {
+    background-color: $indieHell;
+    height: 264px;
+    width: 100%;
+    z-index: 1;
+    bottom: -260px;
+    display: flex;
+    font-family: 'Proxima_Bold';
+    color: white;
+    flex-basis: 360px;
+
+    @include mobile {
+        display: block;
+        height: auto;
+    }
+
+
+
+
+
+}
+
+.big__teaser--festival-countdown--tickets,
+.big__teaser--festival-countdown--hours,
+.big__teaser--festival-countdown--visitors,
+.big__teaser--festival-countdown--day {
+
+    border-right: 1px solid $indieHell;
+    border-left: 1px solid $indieHell;
+    flex-basis: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+        height: 136px;
+        border-bottom: 1px solid $indie;
+    }
+}
+
+.text-content {
+    font-size: 32px;
+    line-height: 40px;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+
+    @include mobile {
+        @include countMobile;
+    }
+}
+
+.text-content-number {
+    font-size: 56px;
+    line-height: 80px;
+
+    @include mobile {
+        @include countDownHeavy;
+    }
+}
+
+.info__festival {
+
+    &--about-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 135px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+
+    }
+
+    &--about {
+        width: 50%;
+        @include footerLabel2;
+
+        @include mobile {
+            width: 85%;
+            width: 88%;
+            padding: 0 10px;
+        }
+
+    }
+
+    &--main-title {
+        margin-right: 35px;
+        padding-bottom: 88px;
+
+    }
+
+    &--location {
+        margin-right: 30px;
+
+
+    }
+
+    &-date-location {
+        display: flex;
+        align-items: center;
+        padding-bottom: 35px;
+
+
+    }
+
+    &-location-icon {
+        margin-right: 15px;
+    }
+
+    &--short-desc {
+        @include lead;
+        padding-bottom: 80px;
+    }
+
+    &--long-desc {
+        @include footerLabel2;
+        ;
+    }
+
+    &--buy-ticket {
+        @include btnColor;
+        display: block;
+        height: 48px;
+        padding: 0 32px;
+        background-color: black;
+        outline: none;
+        border: 2px solid $black;
+        color: $white;
+        margin-top: 20px;
+        cursor: pointer;
+
+        @include mobile {
+            margin: 0 auto;
+            display: flex;
+        }
+
+
+    }
+
+
+
+    &--share-ticket {
+        @include btnColor;
+        height: 48px;
+        padding: 0 32px;
+        margin-top: 20px;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid $black;
+        cursor: pointer;
+
+        @include mobile {
+            margin: 0 auto;
+            display: flex;
+            margin-top: 15px;
+        }
+
+    }
+
+    &-advertising-box {
+
+        margin-top: 35px;
+        height: 150px;
+        widows: 200px;
+        border: 2px solid $greyC2;
+        overflow: hidden;
+
+        @include mobile {
+            height: 200px;
+            width: 209px;
+            display: block;
+            margin: 15px auto;
+        }
+
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &--share-ticket-cont {
+        margin-left: 50px;
+
+        a {
+            text-decoration: none;
+        }
+
+        @include mobile {
+            margin-left: 0;
+        }
+    }
+
+
+
+}
+
+
+
+.event-list-layout--teaser-reminder {
+    justify-content: start;
+}
+
+
+
+.info__festival--main-title {
+    @include heading1;
+}

@@ -1,0 +1,48 @@
+.navbar__layout--breadcrumb {
+    position: inherit;
+    top: 85px;
+
+    &--flex-wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+}
+
+.bcmb {
+    fill: $greyC2;
+}
+
+.breadcrumb-current-section {
+    font-size: 13px;
+    color: $greyC2;
+    font-family: 'Proxima_Reg';
+    margin-right: 12px;
+}
+
+.breadcrumb-icon {
+    width: 18px;
+
+    img {
+        width: 10px;
+    }
+}
+
+.breadcrumb-arrow-right {
+    margin-right: 12px;
+    margin-left: 12px;
+    width: 5px;
+}
+
+.round-arrow {
+    width: 10px;
+    border: 1px solid $greyC2;
+    display: flex;
+    padding: 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

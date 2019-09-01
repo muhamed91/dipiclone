@@ -1,0 +1,108 @@
+.information {
+
+    width: 50%;
+    margin-left: 232px;
+    padding-bottom: 88px;
+
+    @include mobile {
+        width: auto;
+        margin: 0;
+        padding: 100px 10px;
+    }
+
+    &-title {
+        margin-top: 130px;
+        @include heading2;
+
+        @include mobile {
+            @include heading1Mobile;
+
+
+        }
+    }
+
+    &-article {
+        @include lead;
+        padding: 88px 0;
+
+        @include mobile {
+            @include heading3Mobile;
+        }
+    }
+
+
+}
+
+
+
+.information-accordion {
+
+    &-header {
+        border-bottom: 4px solid black;
+
+    }
+
+    &-title {
+        @include heading3;
+        display: inline-block;
+        width: 85%;
+        padding-top: 45px;
+
+        @include mobile {
+            @include heading2Mobile;
+
+            display: inline-block;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 111%;
+            background-color: $black;
+
+            @include mobile {
+                width: 130%;
+            }
+
+        }
+    }
+
+    &-trigger {
+        @include footerLabel;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        right: -16px;
+    }
+
+    &-parag {
+        @include copy;
+        padding: 60px 62px 24px 0;
+    }
+
+    &-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease;
+        -webkit-transition: max-height 0.2s ease;
+        -moz-transition: max-height 0.2s ease;
+        -ms-transition: max-height 0.2s ease;
+        -o-transition: max-height 0.2s ease;
+    }
+}
+
+.is-open {
+    max-height: unset;
+}
+
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+
+#map {
+    height: 500px;
+
+    width: 95%;
+}

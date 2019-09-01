@@ -1,0 +1,227 @@
+.checkout-head {
+    height: 200px;
+    width: 1440px;
+    background-color: $indie;
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.checkout-icon {
+    position: absolute;
+    left: 50%;
+    top: 132px;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 250px;
+
+    @include mobile {
+        @include heading1Mobile;
+    }
+}
+
+.checkout-title {
+    @include heading2;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.checkout-description {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    @include lead;
+    padding-bottom: 88px;
+
+    @include mobile {
+        @include heading3Mobile;
+        width: 100%;
+
+    }
+}
+
+.ticket__corner {
+    background-color: $greyF0;
+    padding: 5px;
+
+    &-location-date {
+        @include copy;
+        text-align: center;
+        margin-bottom: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 75px;
+
+        @include mobile {
+            flex-direction: column;
+            padding: 15px 0;
+
+        }
+    }
+
+    &--festival-date {
+        margin-right: 12px;
+    }
+
+    &-subtitle {
+        @include heading3;
+        padding-left: 120px;
+        margin-bottom: 40px;
+        padding-top: 65px;
+
+
+
+
+
+    }
+}
+
+.festival-entering {
+
+    &-item {
+        background-color: $indie;
+        height: 224px;
+        width: 289px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-choice {
+        @include heading3;
+        padding-bottom: 12px;
+        color: $white;
+    }
+
+    .tickets-point-rest {
+        height: auto;
+        width: 290px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+
+    &-price {
+        @include lead;
+        color: $white;
+    }
+
+    .ticket-entering {
+        width: 150px;
+        height: 70px;
+        padding-bottom: 12px;
+        padding: 0px 5px;
+    }
+
+    .box {
+        height: 15px;
+        width: 15px;
+        background-color: #00D79F;
+        margin: 0 5px;
+    }
+
+    .is-nva {
+        background-color: $greyC2;
+    }
+
+
+
+    .festival-rest-ticket {
+        display: flex;
+        justify-content: space-around;
+        @include textindie;
+        background: white;
+        align-items: center;
+        padding-top: 12px;
+
+        @include mobile {
+            width: 290px;
+        }
+    }
+
+
+
+    .rest-boxe {
+        flex-direction: column;
+    }
+}
+
+.item-wrapper {
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.item-wrapper-2 {
+    display: flex;
+    justify-content: start;
+    padding-left: 125px;
+
+    @include mobile {
+        flex-direction: column;
+        padding: 0;
+    }
+
+
+}
+
+.festival-entering {
+    margin: 0 5px;
+
+    @include mobile {
+        margin: 10px auto;
+    }
+}
+
+.festival-ticket-counter-plus-minus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.ticket-btn {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border: 1px solid $black;
+    background: transparent;
+}
+
+.festival-ticker-shower {
+    @include btnPlus;
+    padding: 0 20px;
+}
+
+.line-hr {
+    background-color: black;
+    height: 2px;
+    margin-top: 88px;
+}
+
+.buy-tickets {
+    @include btnColor;
+    height: 48px;
+    padding: 0 32px;
+    background-color: $black;
+    outline: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 88px auto;
+    @include smoothFade;
+
+    &:hover {
+        background-color: $greyC2;
+    }
+
+}

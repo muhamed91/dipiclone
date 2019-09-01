@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg class="ham-menu_icon" width="24px" height="19px" viewBox="0 0 24 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>navigation_menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="navigation_menu" class="menu-ham" transform="translate(-12.000000, -15.000000)" fill="#000000">
+            <g transform="translate(12.000000, 15.000000)" id="Rectangle-path">
+                <rect x="0" y="0" width="24" height="2.38410596"></rect>
+                <rect x="0" y="15.8940397" width="24" height="2.38410596"></rect>
+                <rect x="0" y="7.94701987" width="24" height="2.38410596"></rect>
+            </g>
+        </g>
+</g>
+</svg>

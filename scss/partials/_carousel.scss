@@ -1,0 +1,95 @@
+.info__festival-carousel {
+    position: relative;
+    width: 593px;
+    height: 392px;
+    margin-top: 65px;
+    margin-bottom: 170px;
+
+    @include mobile {
+        position: relative;
+        width: 100%;
+        height: 262px;
+        margin-top: 135px;
+        margin-bottom: 170px;
+    }
+
+
+    &-images {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-track-container {
+        height: 100%;
+        position: relative;
+        background-color: red;
+        overflow: hidden;
+    }
+
+    &-track {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        height: 100%;
+        transition: all 200ms;
+        position: relative;
+
+    }
+
+    &-button--left {
+        left: -50px;
+        display: none;
+    }
+
+    &-button--right {
+        display: none;
+    }
+
+    &-nav {
+        display: flex;
+        justify-content: center;
+        padding: 32px 0;
+    }
+
+    &-indicator {
+        border: 0;
+        width: 24px;
+        height: 4px;
+        margin: 0 8px;
+        background: $greyE5;
+        cursor: pointer;
+    }
+
+
+
+
+}
+
+
+.is-hidden {
+    display: none;
+}
+
+.current-slide {
+    background-color: black;
+}
+
+.info__festival-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}

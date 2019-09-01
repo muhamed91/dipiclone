@@ -1,0 +1,102 @@
+.advertising {
+    margin-top: 80px;
+}
+
+.advertising__banner {
+    height: 376px;
+    width: 1440px;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+
+
+    @include mobile {
+        width: 375px;
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+
+
+    &--phone {
+        width: 400px;
+        height: 430px;
+        padding-bottom: 15px;
+        transform: translateY(-65px);
+        -webkit-transform: translateY(-65px);
+        -moz-transform: translateY(-65px);
+        -ms-transform: translateY(-65px);
+        -o-transform: translateY(-65px);
+    }
+
+    &--call-action {
+        align-self: center;
+
+        &-text {
+            color: white;
+            font-family: 'Adelle_Bold';
+            font-size: 55px;
+            padding-bottom: 20px;
+
+
+
+            @include mobile {
+                text-align: center;
+                @include heading1Mobile;
+                color: white;
+                width: 70%;
+                margin: 0 auto;
+                margin-top: -45px;
+            }
+
+        }
+    }
+
+}
+
+.advertising__banner--donwload-btn {
+
+    &-app {
+        @include btnColor;
+        height: 48px;
+        padding: 0 32px;
+        outline: none;
+        border: 2px solid $white;
+        background-color: transparent;
+        color: white;
+        display: inline-block;
+        cursor: pointer;
+        margin-bottom: 35px;
+
+        @include mobile {
+            width: 70%;
+        }
+    }
+
+    &-store {
+        width: 20%;
+        margin-left: 25px;
+        line-height: 15px;
+    }
+
+
+}
+
+// Problem with this Class to Declare above not working
+.advertising__banner--download-btn {
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+}
+
+.flex-wrapper {
+    text-align: center;
+
+    img {
+        width: 40%;
+    }
+}

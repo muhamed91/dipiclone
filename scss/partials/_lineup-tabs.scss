@@ -1,0 +1,187 @@
+.line-up {
+
+    background-color: $greyF0;
+    padding-top: 85px;
+    height: 100%;
+    padding-bottom: 130px;
+
+    &-wrapper {
+        width: 50%;
+        margin-left: 232px;
+        text-align: left;
+
+        @include mobile {
+            width: auto;
+            margin: 0;
+            padding: 0 10px
+        }
+
+    }
+
+    .festival-heading {
+        @include mobile {
+            @include heading2Mobile;
+        }
+    }
+
+    &__title {
+        @include heading1;
+        padding-bottom: 88px;
+
+        @include mobile {
+            @include heading1Mobile;
+        }
+
+    }
+
+    &__description {
+        @include lead;
+        padding-bottom: 80px;
+    }
+}
+
+.tab-days-content {
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.day-name {
+    @include btnColor;
+    height: 48px;
+    padding: 0 32px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #000000;
+    cursor: pointer;
+    margin-right: 8px;
+
+    @include mobile {
+        margin-right: 8px;
+        display: block;
+        width: 74%;
+        margin-left: 6px;
+    }
+}
+
+.tab-day-name {
+    @include smoothFade;
+
+    &:hover {
+
+        .day-name {
+            background-color: $black;
+            color: $white;
+        }
+
+        .triangle {
+            visibility: visible;
+        }
+    }
+
+}
+
+// Add Class after Click
+
+.color-day-btn {
+    background-color: $black;
+    color: $white;
+}
+
+
+$triangleSize: 10px;
+
+.triangle {
+
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    border-top: $triangleSize solid $black;
+    border-right: $triangleSize solid transparent;
+    border-bottom: $triangleSize solid transparent;
+    border-left: $triangleSize solid transparent;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    @include mobile {
+        left: 88%;
+        transform: translate(-50%);
+        top: -31px;
+
+        border-top: 10px solid $white;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+
+    }
+
+
+
+}
+
+.show-Triangle {
+    visibility: visible;
+}
+
+.show-content {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.event-plan {
+
+    justify-content: center;
+
+    @include mobile {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    &__bands {
+        display: flex;
+        align-items: center;
+        margin-top: 45px;
+
+
+
+    }
+
+    &-start {
+        @include footerLabel;
+        padding-right: 25px;
+    }
+
+    &-band-name {
+        background-color: white;
+        width: 289px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        @include lead;
+        border-right: 4px solid $indie;
+        margin-right: 15px;
+
+    }
+
+
+}
+
+@each $name,
+$color in $colors {
+    .#{$name} {
+        border-right: 4px solid $color;
+
+    }
+}
+
+.festival-video-teaser {
+    height: 392px;
+    width: 100%;
+}

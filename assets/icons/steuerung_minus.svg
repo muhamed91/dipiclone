@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="2px" viewBox="0 0 16 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>steuerung_minus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="steuerung_minus" transform="translate(-16.000000, -23.000000)" fill="#000000">
+            <g transform="translate(16.000000, 22.000000)" id="minus">
+                <rect transform="translate(8.003460, 2.000000) rotate(90.000000) translate(-8.003460, -2.000000) " x="7" y="-6" width="2.00692042" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

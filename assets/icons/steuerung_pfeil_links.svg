@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="24px" viewBox="0 0 13 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>steuerung_pfeil_links</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="steuerung_pfeil_links" transform="translate(-17.000000, -12.000000)" fill="#000000">
+            <g transform="translate(23.500000, 24.000000) scale(-1, 1) translate(-23.500000, -24.000000) translate(17.000000, 12.000000)" id="Shape">
+                <path d="M12.5380457,11.5215592 L1.21641314,0.199926652 C0.949844267,-0.0666422172 0.522328156,-0.0666422172 0.255759288,0.199926652 C-0.0108095812,0.466495521 -0.0108095812,0.894011631 0.255759288,1.1605805 L11.0945501,11.9993713 L0.255759288,22.8381621 C-0.0108095812,23.104731 -0.0108095812,23.5322471 0.255759288,23.7988159 C0.386528921,23.9295856 0.562564967,24 0.733571411,24 C0.904577855,24 1.0806139,23.9346152 1.21138353,23.7988159 L12.5330161,12.4771834 C12.7995849,12.2156442 12.7995849,11.7830984 12.5380457,11.5215592 L12.5380457,11.5215592 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,120 @@
+.event__teaser-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.event__teaser-filter {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.event__list-teaser-filter {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+
+.event-box-article {
+    width: 348px;
+    background-color: $white;
+    position: relative;
+    margin: 10px 10px;
+
+
+    &-inner {
+        padding: 0 6px;
+        margin-bottom: 22px;
+    }
+
+
+    .event-img {
+        width: 100%;
+    }
+
+
+
+}
+
+.event-teaser-img {
+    position: relative;
+}
+
+.event-icon-cont {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: $indie;
+    height: 48px;
+    width: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Colorize SVG 
+.whitey {
+    fill: $white;
+}
+
+.event-box-start-end {
+    padding: 15px;
+    @include dateLikes;
+}
+
+.event-article-title {
+    padding: 0px 10px 15px 10px;
+    @include heading3;
+}
+
+.event-box-content-text {
+    @include copy;
+    margin-bottom: 80px;
+    padding: 0px 15px 15px 15px;
+    height: 100px;
+}
+
+// Checkbox SVG activitate a solution for Template String
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    content: url('/assets/icons/detail_merken.svg');
+    border: none;
+    outline: none;
+    height: 17px;
+    padding-right: 5px;
+    padding-left: 15px;
+}
+
+
+
+.event-reminder {
+    @include footerLabel;
+    text-transform: uppercase;
+    padding-top: 4px;
+}
+
+.event-border {
+    height: 4px;
+    width: 100%;
+    background-color: $indie;
+}
+
+.festivals__teaseer-container {
+    width: 77%;
+    margin: 0 auto;
+
+    @include mobile {
+        width: 87%;
+    }
+}
+
+.flex-start-boxes {
+    justify-content: start;
+}

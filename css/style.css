@@ -1,0 +1,2250 @@
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+@font-face {
+  src: url("../assets/fonts/Adelle_Bold.otf");
+  font-family: 'Adelle_Bold'; }
+
+@font-face {
+  src: url("../assets/fonts/Adelle_Reg.otf");
+  font-family: 'Adelle_Reg'; }
+
+@font-face {
+  src: url("../assets/fonts/ProximaNova-Bold.ttf");
+  font-family: 'Proxima_Bold'; }
+
+@font-face {
+  src: url("../assets/fonts/ProximaNova-Light.ttf");
+  font-family: 'Proxima_Light'; }
+
+@font-face {
+  src: url("../assets/fonts/ProximaNova-Reg.ttf");
+  font-family: 'Proxima_Reg'; }
+
+.navbar__layout {
+  border: 1px solid #E5E5E5;
+  display: grid;
+  grid-template-columns: 440px auto 200px 240px;
+  grid-template-rows: 64px;
+  align-items: center;
+  position: fixed;
+  width: 1440px;
+  background-color: #FFFFFF;
+  z-index: 1;
+  top: 0; }
+  @media (max-width: 500px) {
+    .navbar__layout {
+      width: auto;
+      grid-template-columns: 245px auto 64px 64px; } }
+  .navbar__layout .navbar__menu {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: center;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease; }
+    .navbar__layout .navbar__menu--hamburger {
+      height: 100%;
+      width: 25px;
+      margin-left: 24px;
+      cursor: pointer; }
+      .navbar__layout .navbar__menu--hamburger .menu-ham {
+        transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        fill: #000000; }
+    .navbar__layout .navbar__menu:hover a, .navbar__layout .navbar__menu:focus a {
+      color: #767676; }
+    .navbar__layout .navbar__menu:hover .menu-ham, .navbar__layout .navbar__menu:focus .menu-ham {
+      fill: #767676; }
+    .navbar__layout .navbar__menu--pointer {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'Proxima_Bold';
+      font-size: 17px;
+      color: #000000;
+      margin-left: 12px;
+      transition: all 0.25s ease;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      cursor: pointer;
+      padding: 10px 10px 10px 0; }
+  .navbar__layout--login {
+    border-left: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    height: 100%;
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    padding-left: 12px;
+    cursor: pointer; }
+    .navbar__layout--login .login-bg {
+      fill: #C2C2C2;
+      transition: all 0.25s ease;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease; }
+    .navbar__layout--login .profile-img {
+      margin-left: 12px; }
+      @media (max-width: 500px) {
+        .navbar__layout--login .profile-img {
+          display: none; } }
+    .navbar__layout--login:hover, .navbar__layout--login:focus {
+      background-color: #C2C2C2; }
+      .navbar__layout--login:hover a, .navbar__layout--login:focus a {
+        color: #000000; }
+      .navbar__layout--login:hover .login-bg, .navbar__layout--login:focus .login-bg {
+        fill: #000000; }
+    .navbar__layout--login--pointer {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'Proxima_Bold';
+      font-size: 17px;
+      color: #C2C2C2;
+      cursor: pointer;
+      padding: 10px 10px 10px 12px;
+      transition: all 0.25s ease;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease; }
+      @media (max-width: 500px) {
+        .navbar__layout--login--pointer {
+          display: none; } }
+  .navbar__layout--brand {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center; }
+    .navbar__layout--brand--logo {
+      width: 150px; }
+      @media (max-width: 500px) {
+        .navbar__layout--brand--logo {
+          display: none; } }
+  .navbar__layout--ticket {
+    grid-column: 4/5;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    padding-left: 12px; }
+    .navbar__layout--ticket .tc-seller {
+      fill: #C2C2C2;
+      transition: all 0.25s ease;
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease; }
+    .navbar__layout--ticket:hover, .navbar__layout--ticket:focus {
+      background-color: #C2C2C2; }
+      .navbar__layout--ticket:hover a, .navbar__layout--ticket:focus a {
+        color: #000000; }
+      .navbar__layout--ticket:hover .tc-seller, .navbar__layout--ticket:focus .tc-seller {
+        fill: #000000; }
+    .navbar__layout--ticket--pointer {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: 'Proxima_Bold';
+      font-size: 17px;
+      color: #C2C2C2;
+      margin-left: 12px;
+      cursor: pointer;
+      padding: 10px 10px 10px 0; }
+      @media (max-width: 500px) {
+        .navbar__layout--ticket--pointer {
+          display: none; } }
+
+.fadein {
+  animation: fadein 0.3s;
+  -webkit-animation: fadein 0.3s; }
+
+.fadeout {
+  animation: fadeout 0.3s;
+  -webkit-animation: fadeout 0.3s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.8; } }
+
+@keyframes fadeout {
+  from {
+    opacity: 0.8; }
+  to {
+    opacity: 0; } }
+
+.filter__wrapper--main-heading {
+  font-family: 'Adelle_Bold';
+  font-size: 56px;
+  line-height: 80px;
+  color: #000000;
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 45px; }
+  @media (max-width: 500px) {
+    .filter__wrapper--main-heading {
+      font-family: 'Adelle_Bold';
+      font-size: 32px;
+      line-height: 40px;
+      color: #000000; } }
+
+.filter__wrapper--description {
+  font-family: 'Adelle_Reg';
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  text-align: center; }
+  @media (max-width: 500px) {
+    .filter__wrapper--description {
+      font-family: 'Adelle_Reg';
+      font-size: 20px;
+      line-height: 32px;
+      color: #000000;
+      padding: 15px; } }
+
+.filter__buttons {
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -4; }
+  @media (max-width: 500px) {
+    .filter__buttons {
+      flex-direction: column; } }
+  .filter__buttons--more-genres {
+    text-decoration: underline;
+    font-family: 'Proxima_Bold';
+    font-size: 17px;
+    line-height: 28px;
+    color: #000000;
+    cursor: pointer;
+    padding-bottom: 32px;
+    width: 100px; }
+
+.flt-btns {
+  height: 48px;
+  width: auto;
+  background-color: #C2C2C2;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  font-family: 'Proxima_Reg';
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 32px; }
+  .flt-btns .whitey {
+    fill: white; }
+
+.music-icon {
+  margin-right: 24px;
+  margin-left: 12px;
+  width: 25px; }
+
+.festival-numbers {
+  margin-right: 16px;
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 23px; }
+
+.filter__results {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 500px) {
+    .filter__results {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
+  .filter__results--reset {
+    border: 2px solid black;
+    background: transparent;
+    color: #000000;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease; }
+    .filter__results--reset:hover {
+      background: #000000;
+      color: #FFFFFF; }
+  .filter__results--show {
+    color: #FFFFFF;
+    border: 2px solid black;
+    background: #000000;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease; }
+    .filter__results--show:hover {
+      background: #C2C2C2;
+      border: 2px solid #C2C2C2; }
+  .filter__results--more-results {
+    justify-content: center;
+    display: flex;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    height: 0;
+    opacity: 0; }
+    @media (max-width: 500px) {
+      .filter__results--more-results {
+        flex-direction: column; } }
+
+.show-more-tranisition {
+  height: 80px;
+  opacity: 1; }
+
+.show-more-genre {
+  fill: #FFFFFF; }
+
+.res-btns {
+  display: block;
+  height: 48px;
+  width: 250px;
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  margin-right: 16px;
+  z-index: 0; }
+  @media (max-width: 500px) {
+    .res-btns {
+      margin: 16px 0; } }
+
+.big-teaser {
+  height: 450px;
+  width: 1440px;
+  background-image: url("../assets/img/BigTeaser.png");
+  background-position: center center;
+  margin: 80px 0;
+  background-size: cover; }
+  @media (max-width: 500px) {
+    .big-teaser {
+      width: 375px;
+      height: 176px; } }
+
+.magazin {
+  margin-bottom: 150px; }
+  .magazin__heading {
+    font-family: 'Adelle_Bold';
+    font-size: 56px;
+    line-height: 80x;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 80px; }
+    @media (max-width: 500px) {
+      .magazin__heading {
+        font-family: 'Adelle_Bold';
+        font-size: 32px;
+        line-height: 40px;
+        color: #000000; } }
+  .magazin__show-more {
+    margin: 0 auto;
+    display: block;
+    font-family: 'Proxima_Bold';
+    font-size: 17px;
+    line-height: 28px;
+    text-transform: uppercase;
+    height: 48px;
+    padding: 0 32px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #000000;
+    cursor: pointer; }
+    @media (max-width: 500px) {
+      .magazin__show-more {
+        margin-top: 35px;
+        width: 70%; } }
+
+.magazin__article--wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.magazin__article--box {
+  width: 310px;
+  margin-left: 90px; }
+  @media (max-width: 500px) {
+    .magazin__article--box {
+      margin-left: 0;
+      width: 100%; } }
+  .magazin__article--box--title {
+    font-family: 'Adelle_Bold';
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    padding-bottom: 10px; }
+    @media (max-width: 500px) {
+      .magazin__article--box--title {
+        font-family: 'Adelle_Bold';
+        font-size: 24px;
+        line-height: 32px;
+        color: #000000;
+        padding: 20px;
+        border-bottom: 1px solid #F0F0F0;
+        width: 100; } }
+    .magazin__article--box--title span {
+      display: none; }
+      @media (max-width: 500px) {
+        .magazin__article--box--title span {
+          display: block;
+          font-size: 15px;
+          font-family: 'Proxima_Reg';
+          font-size: 17px;
+          line-height: 28px;
+          text-transform: uppercase;
+          padding-bottom: 5px;
+          text-decoration: underline; } }
+  .magazin__article--box--text {
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+    color: black; }
+    @media (max-width: 500px) {
+      .magazin__article--box--text {
+        display: none; } }
+  .magazin__article--box:nth-child(5) {
+    padding-top: 90px;
+    height: 240px; }
+    @media (max-width: 500px) {
+      .magazin__article--box:nth-child(5) {
+        padding: 0;
+        height: 0;
+        display: none; } }
+  @media (max-width: 500px) {
+    .magazin__article--box:nth-child(6) {
+      display: none; } }
+  @media (max-width: 500px) {
+    .magazin__article--box:nth-child(4) {
+      display: none; } }
+
+.advertising {
+  margin-top: 80px; }
+
+.advertising__banner {
+  height: 376px;
+  width: 1440px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 500px) {
+    .advertising__banner {
+      width: 375px;
+      height: auto;
+      flex-direction: column;
+      padding-bottom: 25px; } }
+  .advertising__banner--phone {
+    width: 400px;
+    height: 430px;
+    padding-bottom: 15px;
+    transform: translateY(-65px);
+    -webkit-transform: translateY(-65px);
+    -moz-transform: translateY(-65px);
+    -ms-transform: translateY(-65px);
+    -o-transform: translateY(-65px); }
+  .advertising__banner--call-action {
+    align-self: center; }
+    .advertising__banner--call-action-text {
+      color: white;
+      font-family: 'Adelle_Bold';
+      font-size: 55px;
+      padding-bottom: 20px; }
+      @media (max-width: 500px) {
+        .advertising__banner--call-action-text {
+          text-align: center;
+          font-family: 'Adelle_Bold';
+          font-size: 32px;
+          line-height: 40px;
+          color: #000000;
+          color: white;
+          width: 70%;
+          margin: 0 auto;
+          margin-top: -45px; } }
+
+.advertising__banner--donwload-btn-app {
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  text-transform: uppercase;
+  height: 48px;
+  padding: 0 32px;
+  outline: none;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 35px; }
+  @media (max-width: 500px) {
+    .advertising__banner--donwload-btn-app {
+      width: 70%; } }
+
+.advertising__banner--donwload-btn-store {
+  width: 20%;
+  margin-left: 25px;
+  line-height: 15px; }
+
+.advertising__banner--download-btn {
+  display: flex; }
+  @media (max-width: 500px) {
+    .advertising__banner--download-btn {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 25px; } }
+
+.flex-wrapper {
+  text-align: center; }
+  .flex-wrapper img {
+    width: 40%; }
+
+.discovery__title {
+  font-family: 'Adelle_Bold';
+  font-size: 56px;
+  line-height: 80x;
+  color: #000000;
+  text-align: center;
+  margin: 80px 0; }
+  @media (max-width: 500px) {
+    .discovery__title {
+      font-family: 'Adelle_Bold';
+      font-size: 32px;
+      line-height: 40px;
+      color: #000000; } }
+
+.discovery__description {
+  font-family: 'Adelle_Reg';
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 80px; }
+  @media (max-width: 500px) {
+    .discovery__description {
+      font-family: 'Adelle_Reg';
+      font-size: 20px;
+      line-height: 32px;
+      color: #000000; } }
+
+.discovery__sound {
+  position: relative;
+  transform: translateX(-35px);
+  -webkit-transform: translateX(-35px);
+  -moz-transform: translateX(-35px);
+  -ms-transform: translateX(-35px);
+  -o-transform: translateX(-35px);
+  margin: 55px -45px; }
+  .discovery__sound:nth-child(3) {
+    transform: translateX(-15px);
+    -webkit-transform: translateX(-15px);
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -o-transform: translateX(-15px); }
+
+.discovery__show-more {
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 32px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #000000;
+  height: 48px;
+  margin: 80px auto;
+  cursor: pointer; }
+  @media (max-width: 500px) {
+    .discovery__show-more {
+      width: 70%; } }
+
+.discovery__play-btn {
+  cursor: pointer;
+  padding: 25px;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  width: 30px; }
+
+.discovery .electro {
+  top: 16px; }
+
+.news {
+  background-color: #F0F0F0;
+  max-height: 100%;
+  padding-bottom: 50px; }
+  .news__title {
+    font-family: 'Adelle_Bold';
+    font-size: 56px;
+    line-height: 80x;
+    color: #000000;
+    text-align: center;
+    margin: 120px 0 45px 0;
+    padding-top: 80px;
+    padding-bottom: 15px; }
+    @media (max-width: 500px) {
+      .news__title {
+        font-family: 'Adelle_Bold';
+        font-size: 32px;
+        line-height: 40px;
+        color: #000000; } }
+  .news__cards--wrapper {
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 500px) {
+      .news__cards--wrapper {
+        flex-direction: column;
+        align-items: center; } }
+  .news .news__card {
+    width: 221px;
+    background-color: #FFFFFF;
+    display: flex;
+    margin: 20px 10px 0 10px; }
+    @media (max-width: 500px) {
+      .news .news__card {
+        width: auto; } }
+    .news .news__card--img-plc {
+      overflow: hidden;
+      width: 100%; }
+      .news .news__card--img-plc-picture {
+        width: 100%; }
+    .news .news__card--date {
+      font-family: 'Proxima_Reg';
+      font-size: 13px;
+      line-height: 28px;
+      color: #000000;
+      padding: 0 18px;
+      margin: 8px 0 8px 0; }
+    .news .news__card--content-hashes {
+      font-family: 'Proxima_Reg';
+      font-size: 17px;
+      line-height: 28px;
+      color: black;
+      padding-bottom: 20px;
+      margin: 0 15px 0 15px;
+      border-bottom: 1px solid #E5E5E5; }
+    .news .news__card--likeometer {
+      padding: 5px 18px 8px 18px;
+      display: flex; }
+      .news .news__card--likeometer-heart-icon {
+        width: 10%; }
+    .news .news__card--like-counter {
+      font-family: 'Proxima_Reg';
+      font-size: 13px;
+      line-height: 28px;
+      color: black;
+      margin-left: 8px; }
+    .news .news__card--show-more {
+      font-family: 'Proxima_Bold';
+      font-size: 17px;
+      line-height: 28px;
+      text-transform: uppercase;
+      display: block;
+      padding: 0 32px;
+      background: transparent;
+      outline: none;
+      border: 2px solid #000000;
+      height: 48px;
+      margin: 80px auto;
+      cursor: pointer; }
+      @media (max-width: 500px) {
+        .news .news__card--show-more {
+          width: 70%; } }
+
+.main__footer {
+  background-color: #FFFFFF;
+  height: 64px;
+  border-top: 1px solid #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%; }
+  @media (max-width: 500px) {
+    .main__footer {
+      flex-direction: column;
+      padding: 25px 0; } }
+  .main__footer--nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0 15px; }
+    .main__footer--nav a {
+      text-decoration: none;
+      font-family: 'Proxima_Reg';
+      font-size: 17px;
+      line-height: 28px;
+      color: black;
+      text-transform: uppercase;
+      margin: 0 15px;
+      color: #767676; }
+  .main__footer--social {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-content: center; }
+    @media (max-width: 500px) {
+      .main__footer--social {
+        margin-top: 15px; } }
+    .main__footer--social .facebook,
+    .main__footer--social .instagram,
+    .main__footer--social .snapchat,
+    .main__footer--social .youtube,
+    .main__footer--social .twiiter {
+      margin: 0 12px; }
+    .main__footer--social .facebook,
+    .main__footer--social .instagram,
+    .main__footer--social .snapchat,
+    .main__footer--social .yt,
+    .main__footer--social .twitter {
+      fill: #767676;
+      margin: 0 15px; }
+  .main__footer .main__footer--bt-text {
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+    color: black;
+    text-transform: uppercase;
+    color: #767676;
+    display: inline-block; }
+    @media (max-width: 500px) {
+      .main__footer .main__footer--bt-text {
+        display: none; } }
+  .main__footer .main__footer--bt-arrow {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .main__footer .main__footer--bt-arrow .arrow-top {
+      fill: #767676; }
+    .main__footer .main__footer--bt-arrow-icon {
+      margin-left: 15px;
+      position: relative;
+      top: 2px;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg); }
+      @media (max-width: 500px) {
+        .main__footer .main__footer--bt-arrow-icon {
+          left: 140px;
+          top: -52px; } }
+
+.overlay {
+  z-index: 1;
+  background-color: black;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0.8;
+  visibility: hidden; }
+
+.show-overlay {
+  visibility: visible; }
+
+overlay-list-show {
+  display: block; }
+
+.navbar__layout-overlay {
+  border: 1px solid #E5E5E5;
+  display: grid;
+  grid-template-columns: 440px auto 200px 240px;
+  grid-template-rows: 64px;
+  align-items: center;
+  position: fixed;
+  width: 1440px; }
+  @media (max-width: 500px) {
+    .navbar__layout-overlay {
+      width: auto;
+      grid-template-columns: 244px auto 64px 64px; } }
+  .navbar__layout-overlay .navbar__menu-dark {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: center;
+    margin-left: 24px;
+    cursor: pointer; }
+    .navbar__layout-overlay .navbar__menu-dark--close {
+      height: 100%;
+      width: 25px; }
+    .navbar__layout-overlay .navbar__menu-dark .closex {
+      fill: #FFFFFF; }
+    .navbar__layout-overlay .navbar__menu-dark--pointer-dark {
+      text-decoration: none;
+      font-family: "Proxima_Bold";
+      font-size: 17px;
+      color: #FFFFFF;
+      cursor: pointer;
+      padding: 10px 10px 10px 12px; }
+  .navbar__layout-overlay--login {
+    border-left: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    height: 100%;
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    cursor: pointer;
+    color: #FFFFFF; }
+    .navbar__layout-overlay--login .login-bg {
+      fill: #FFFFFF; }
+    .navbar__layout-overlay--login .profile-img {
+      margin-left: 12px; }
+    .navbar__layout-overlay--login--pointer {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: "Proxima_Bold";
+      font-size: 17px;
+      margin-left: 12px;
+      cursor: pointer;
+      padding: 10px 10px 10px 0;
+      color: #FFFFFF; }
+      @media (max-width: 500px) {
+        .navbar__layout-overlay--login--pointer {
+          display: none; } }
+  .navbar__layout-overlay--brand {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center; }
+    .navbar__layout-overlay--brand--logo {
+      width: 150px; }
+      @media (max-width: 500px) {
+        .navbar__layout-overlay--brand--logo {
+          display: none; } }
+    .navbar__layout-overlay--brand .navbar__layout-overlay--brand--logo {
+      fill: #FFFFFF; }
+  .navbar__layout-overlay--ticket {
+    grid-column: 4/5;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 12px; }
+    .navbar__layout-overlay--ticket .tc-seller {
+      fill: #FFFFFF; }
+    .navbar__layout-overlay--ticket--pointer {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: "Proxima_Bold";
+      font-size: 17px;
+      color: #FFFFFF;
+      margin-left: 12px;
+      cursor: pointer;
+      padding: 10px 10px 10px 0; }
+      @media (max-width: 500px) {
+        .navbar__layout-overlay--ticket--pointer {
+          display: none; } }
+
+.navbar__overlay-list-wrapper {
+  height: 205px;
+  width: 100%;
+  color: #FFFFFF;
+  display: none; }
+  .navbar__overlay-list-wrapper .navbar__layout-overlay-list {
+    text-align: center;
+    margin-top: 250px;
+    list-style-type: none;
+    font-family: 'Adelle_Bold';
+    font-size: 56px;
+    position: fixed;
+    z-index: 1;
+    width: 1440px; }
+    @media (max-width: 500px) {
+      .navbar__overlay-list-wrapper .navbar__layout-overlay-list {
+        width: auto;
+        position: fixed;
+        left: 18%;
+        top: 10px; } }
+    .navbar__overlay-list-wrapper .navbar__layout-overlay-list-items {
+      transition: all 0.15s ease;
+      -webkit-transition: all 0.15s ease;
+      -moz-transition: all 0.15s ease;
+      -ms-transition: all 0.15s ease;
+      -o-transition: all 0.15s ease;
+      padding: 25px 0;
+      cursor: pointer; }
+      .navbar__overlay-list-wrapper .navbar__layout-overlay-list-items-anchor {
+        color: #FFFFFF;
+        text-decoration: none; }
+      .navbar__overlay-list-wrapper .navbar__layout-overlay-list-items:hover {
+        background-color: #FFFFFF; }
+        .navbar__overlay-list-wrapper .navbar__layout-overlay-list-items:hover a {
+          color: #000000; }
+
+.navbar__overlay-footer {
+  display: flex;
+  margin-top: 170px;
+  z-index: 1;
+  position: fixed;
+  width: 1440px;
+  top: 600px; }
+  @media (max-width: 500px) {
+    .navbar__overlay-footer {
+      width: 375px;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
+      margin-top: 0; } }
+  .navbar__overlay-footer--socialmedia {
+    display: flex;
+    justify-content: center;
+    padding-left: 344px; }
+    @media (max-width: 500px) {
+      .navbar__overlay-footer--socialmedia {
+        padding: 0;
+        margin-top: 0; } }
+    .navbar__overlay-footer--socialmedia .facebook,
+    .navbar__overlay-footer--socialmedia .instagram,
+    .navbar__overlay-footer--socialmedia .snapchat,
+    .navbar__overlay-footer--socialmedia .yt,
+    .navbar__overlay-footer--socialmedia .youtube,
+    .navbar__overlay-footer--socialmedia .twitter {
+      fill: #FFFFFF;
+      margin-right: 32px;
+      height: 30px;
+      width: 30px; }
+      .navbar__overlay-footer--socialmedia .facebook:last-of-type,
+      .navbar__overlay-footer--socialmedia .instagram:last-of-type,
+      .navbar__overlay-footer--socialmedia .snapchat:last-of-type,
+      .navbar__overlay-footer--socialmedia .yt:last-of-type,
+      .navbar__overlay-footer--socialmedia .youtube:last-of-type,
+      .navbar__overlay-footer--socialmedia .twitter:last-of-type {
+        margin: 0; }
+  .navbar__overlay-footer--searchfield {
+    padding-left: 216px;
+    padding-right: 224px;
+    width: 392px; }
+    @media (max-width: 500px) {
+      .navbar__overlay-footer--searchfield {
+        padding: 0; } }
+    .navbar__overlay-footer--searchfield-input-text {
+      display: flex; }
+      .navbar__overlay-footer--searchfield-input-text input[type="text"] {
+        border: none;
+        border-bottom: 2px solid #FFFFFF;
+        background-color: transparent;
+        appearance: none;
+        width: 100%;
+        font-size: 20px;
+        color: white;
+        padding: 5px; }
+        @media (max-width: 500px) {
+          .navbar__overlay-footer--searchfield-input-text input[type="text"] {
+            margin: 0 auto;
+            width: auto;
+            margin-bottom: 35px;
+            width: 72%; } }
+      .navbar__overlay-footer--searchfield-input-text .search-icon {
+        fill: #FFFFFF; }
+    .navbar__overlay-footer--searchfield .search-loop {
+      position: relative;
+      right: 35px;
+      top: -8px;
+      height: 40px;
+      width: 40px; }
+      @media (max-width: 500px) {
+        .navbar__overlay-footer--searchfield .search-loop {
+          position: absolute;
+          right: 35px;
+          top: 7px;
+          height: 21px;
+          width: 40px; } }
+
+.navbar__layout--breadcrumb {
+  position: inherit;
+  top: 85px; }
+  .navbar__layout--breadcrumb--flex-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 30px; }
+
+.bcmb {
+  fill: #C2C2C2; }
+
+.breadcrumb-current-section {
+  font-size: 13px;
+  color: #C2C2C2;
+  font-family: 'Proxima_Reg';
+  margin-right: 12px; }
+
+.breadcrumb-icon {
+  width: 18px; }
+  .breadcrumb-icon img {
+    width: 10px; }
+
+.breadcrumb-arrow-right {
+  margin-right: 12px;
+  margin-left: 12px;
+  width: 5px; }
+
+.round-arrow {
+  width: 10px;
+  border: 1px solid #C2C2C2;
+  display: flex;
+  padding: 3px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%; }
+
+.festivals__filter-container {
+  background-color: #F0F0F0;
+  margin-top: 65px;
+  height: 100%; }
+
+.festivals__filter--options {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0; }
+  .festivals__filter--options p {
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+    color: #767676; }
+  .festivals__filter--options-date {
+    display: flex;
+    align-items: center; }
+    .festivals__filter--options-date-dropdown {
+      padding-right: 15px; }
+  .festivals__filter--options-canton {
+    display: flex;
+    align-items: center; }
+    .festivals__filter--options-canton-text {
+      padding-right: 15px; }
+  @media (max-width: 500px) {
+    .festivals__filter--options .filter-canton {
+      display: none; } }
+  .festivals__filter--options-views {
+    display: flex;
+    align-items: center; }
+    .festivals__filter--options-views-content {
+      padding: 0 15px 0 10px; }
+      @media (max-width: 500px) {
+        .festivals__filter--options-views-content {
+          display: none; } }
+
+.jazz__filter--color {
+  background-color: #FDD835; }
+
+.hiphop__filter--color {
+  background-color: #D81B60; }
+
+.indie__filter--color {
+  background-color: #00D79F; }
+
+.poprock__filter--color {
+  background-color: #3949AB; }
+
+.electro__filter--color {
+  background-color: #5E35B1; }
+
+.static-class {
+  background-color: #C2C2C2; }
+
+.event__teaser-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.event__teaser-filter {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap; }
+
+.event__list-teaser-filter {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap; }
+
+.event-box-article {
+  width: 348px;
+  background-color: #FFFFFF;
+  position: relative;
+  margin: 10px 10px; }
+  .event-box-article-inner {
+    padding: 0 6px;
+    margin-bottom: 22px; }
+  .event-box-article .event-img {
+    width: 100%; }
+
+.event-teaser-img {
+  position: relative; }
+
+.event-icon-cont {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: #00D79F;
+  height: 48px;
+  width: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; }
+
+.whitey {
+  fill: #FFFFFF; }
+
+.event-box-start-end {
+  padding: 15px;
+  font-family: 'Proxima_Reg';
+  font-size: 13px;
+  line-height: 28px;
+  color: #000000; }
+
+.event-article-title {
+  padding: 0px 10px 15px 10px;
+  font-family: 'Adelle_Bold';
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000; }
+
+.event-box-content-text {
+  font-family: 'Proxima_Reg';
+  font-size: 17px;
+  line-height: 28px;
+  color: black;
+  margin-bottom: 80px;
+  padding: 0px 15px 15px 15px;
+  height: 100px; }
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  content: url("/assets/icons/detail_merken.svg");
+  border: none;
+  outline: none;
+  height: 17px;
+  padding-right: 5px;
+  padding-left: 15px; }
+
+.event-reminder {
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+  padding-top: 4px; }
+
+.event-border {
+  height: 4px;
+  width: 100%;
+  background-color: #00D79F; }
+
+.festivals__teaseer-container {
+  width: 77%;
+  margin: 0 auto; }
+  @media (max-width: 500px) {
+    .festivals__teaseer-container {
+      width: 87%; } }
+
+.flex-start-boxes {
+  justify-content: start; }
+
+.event-list-layout {
+  display: grid;
+  grid-template-columns: 180px 104px 374px 184px 210px 153px;
+  grid-template-rows: 104px;
+  justify-content: center;
+  padding-bottom: 40px; }
+  @media (max-width: 500px) {
+    .event-list-layout {
+      display: block;
+      width: 100%;
+      padding: 0; } }
+  .event-list-layout--teaser-img {
+    background-color: pink; }
+    .event-list-layout--teaser-img img {
+      width: 100%;
+      height: 100%; }
+      @media (max-width: 500px) {
+        .event-list-layout--teaser-img img {
+          display: none; } }
+  .event-list-layout--teaser-icon {
+    background-color: #00D79F;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .event-list-layout .event-list-icon {
+    width: 50px;
+    height: 50px; }
+  .event-list-layout--teaser-title {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    font-family: 'Adelle_Bold';
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    padding-left: 30px;
+    border-right: 1px solid #E5E5E5; }
+    @media (max-width: 500px) {
+      .event-list-layout--teaser-title {
+        font-family: 'Adelle_Bold';
+        font-size: 24px;
+        line-height: 32px;
+        color: #000000;
+        padding-top: 20px; } }
+  .event-list-layout--teaser-canton {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+    color: black;
+    border-right: 1px solid #E5E5E5; }
+    @media (max-width: 500px) {
+      .event-list-layout--teaser-canton {
+        display: block;
+        padding-left: 30px; } }
+  .event-list-layout--teaser-date {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+    color: black;
+    border-right: 1px solid #E5E5E5; }
+    @media (max-width: 500px) {
+      .event-list-layout--teaser-date {
+        display: block;
+        padding-left: 30px; } }
+  .event-list-layout--teaser-reminder {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none !important; }
+    @media (max-width: 500px) {
+      .event-list-layout--teaser-reminder {
+        border-right: none !important;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        margin-bottom: 25px; } }
+
+.event__show-more {
+  margin: 105px auto;
+  display: block;
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  text-transform: uppercase;
+  height: 48px;
+  padding: 0 32px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #000000;
+  cursor: pointer; }
+
+.fix-flex-list {
+  justify-content: center; }
+
+@media (max-width: 500px) {
+  .star-reminder {
+    padding-left: 0 !important; } }
+
+@media (max-width: 500px) {
+  .view-grid {
+    margin: 0 10px; } }
+
+.big__teaser--festival {
+  height: 1289px;
+  width: 100%;
+  background-image: url("../assets/img/BigFestival.png");
+  background-size: cover; }
+  @media (max-width: 500px) {
+    .big__teaser--festival {
+      height: 375px;
+      width: auto; } }
+  .big__teaser--festival-border {
+    background-color: #00D79F;
+    display: block;
+    width: 100%; }
+  .big__teaser--festival-heading {
+    color: #FFFFFF;
+    font-family: 'Adelle_Bold';
+    font-size: 144px;
+    line-height: 144px;
+    padding-left: 120px;
+    position: relative;
+    top: -75px; }
+    @media (max-width: 500px) {
+      .big__teaser--festival-heading {
+        font-family: 'Adelle_Bold';
+        font-size: 48px;
+        line-height: 40px;
+        color: #FFFFFF;
+        padding-left: 20px;
+        top: -25px; } }
+    @media (max-width: 500px) {
+      .big__teaser--festival-heading {
+        padding-bottom: 35px; } }
+
+.big__teaser--festival-countdown {
+  background-color: #1DE9B6;
+  height: 264px;
+  width: 100%;
+  z-index: 1;
+  bottom: -260px;
+  display: flex;
+  font-family: 'Proxima_Bold';
+  color: white;
+  flex-basis: 360px; }
+  @media (max-width: 500px) {
+    .big__teaser--festival-countdown {
+      display: block;
+      height: auto; } }
+
+.big__teaser--festival-countdown--tickets,
+.big__teaser--festival-countdown--hours,
+.big__teaser--festival-countdown--visitors,
+.big__teaser--festival-countdown--day {
+  border-right: 1px solid #1DE9B6;
+  border-left: 1px solid #1DE9B6;
+  flex-basis: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 500px) {
+    .big__teaser--festival-countdown--tickets,
+    .big__teaser--festival-countdown--hours,
+    .big__teaser--festival-countdown--visitors,
+    .big__teaser--festival-countdown--day {
+      height: 136px;
+      border-bottom: 1px solid #00D79F; } }
+
+.text-content {
+  font-size: 32px;
+  line-height: 40px;
+  padding-bottom: 24px;
+  text-transform: uppercase; }
+  @media (max-width: 500px) {
+    .text-content {
+      font-family: 'Proxima_Bold';
+      font-size: 24px;
+      line-height: 32px;
+      color: #FFFFFF; } }
+
+.text-content-number {
+  font-size: 56px;
+  line-height: 80px; }
+  @media (max-width: 500px) {
+    .text-content-number {
+      font-family: 'Proxima_Bold';
+      font-size: 32px;
+      line-height: 40px;
+      color: #FFFFFF; } }
+
+.info__festival--about-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 135px; }
+  @media (max-width: 500px) {
+    .info__festival--about-container {
+      flex-direction: column; } }
+
+.info__festival--about {
+  width: 50%;
+  font-family: 'Proxima_Reg';
+  font-size: 17px;
+  line-height: 28px;
+  color: black; }
+  @media (max-width: 500px) {
+    .info__festival--about {
+      width: 85%;
+      width: 88%;
+      padding: 0 10px; } }
+
+.info__festival--main-title {
+  margin-right: 35px;
+  padding-bottom: 88px; }
+
+.info__festival--location {
+  margin-right: 30px; }
+
+.info__festival-date-location {
+  display: flex;
+  align-items: center;
+  padding-bottom: 35px; }
+
+.info__festival-location-icon {
+  margin-right: 15px; }
+
+.info__festival--short-desc {
+  font-family: 'Adelle_Reg';
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  padding-bottom: 80px; }
+
+.info__festival--long-desc {
+  font-family: 'Proxima_Reg';
+  font-size: 17px;
+  line-height: 28px;
+  color: black; }
+
+.info__festival--buy-ticket {
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  text-transform: uppercase;
+  display: block;
+  height: 48px;
+  padding: 0 32px;
+  background-color: black;
+  outline: none;
+  border: 2px solid #000000;
+  color: #FFFFFF;
+  margin-top: 20px;
+  cursor: pointer; }
+  @media (max-width: 500px) {
+    .info__festival--buy-ticket {
+      margin: 0 auto;
+      display: flex; } }
+
+.info__festival--share-ticket {
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  text-transform: uppercase;
+  height: 48px;
+  padding: 0 32px;
+  margin-top: 20px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #000000;
+  cursor: pointer; }
+  @media (max-width: 500px) {
+    .info__festival--share-ticket {
+      margin: 0 auto;
+      display: flex;
+      margin-top: 15px; } }
+
+.info__festival-advertising-box {
+  margin-top: 35px;
+  height: 150px;
+  widows: 200px;
+  border: 2px solid #C2C2C2;
+  overflow: hidden; }
+  @media (max-width: 500px) {
+    .info__festival-advertising-box {
+      height: 200px;
+      width: 209px;
+      display: block;
+      margin: 15px auto; } }
+  .info__festival-advertising-box img {
+    width: 100%; }
+
+.info__festival--share-ticket-cont {
+  margin-left: 50px; }
+  .info__festival--share-ticket-cont a {
+    text-decoration: none; }
+  @media (max-width: 500px) {
+    .info__festival--share-ticket-cont {
+      margin-left: 0; } }
+
+.event-list-layout--teaser-reminder {
+  justify-content: start; }
+
+.info__festival--main-title {
+  font-family: 'Adelle_Bold';
+  font-size: 56px;
+  line-height: 80px;
+  color: #000000; }
+
+.info__festival-carousel {
+  position: relative;
+  width: 593px;
+  height: 392px;
+  margin-top: 65px;
+  margin-bottom: 170px; }
+  @media (max-width: 500px) {
+    .info__festival-carousel {
+      position: relative;
+      width: 100%;
+      height: 262px;
+      margin-top: 135px;
+      margin-bottom: 170px; } }
+  .info__festival-carousel-images {
+    width: 100%;
+    height: 100%; }
+  .info__festival-carousel-track-container {
+    height: 100%;
+    position: relative;
+    background-color: red;
+    overflow: hidden; }
+  .info__festival-carousel-track {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: 100%;
+    transition: all 200ms;
+    position: relative; }
+  .info__festival-carousel-button--left {
+    left: -50px;
+    display: none; }
+  .info__festival-carousel-button--right {
+    display: none; }
+  .info__festival-carousel-nav {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0; }
+  .info__festival-carousel-indicator {
+    border: 0;
+    width: 24px;
+    height: 4px;
+    margin: 0 8px;
+    background: #E5E5E5;
+    cursor: pointer; }
+
+.is-hidden {
+  display: none; }
+
+.current-slide {
+  background-color: black; }
+
+.info__festival-slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%; }
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer; }
+
+.line-up {
+  background-color: #F0F0F0;
+  padding-top: 85px;
+  height: 100%;
+  padding-bottom: 130px; }
+  .line-up-wrapper {
+    width: 50%;
+    margin-left: 232px;
+    text-align: left; }
+    @media (max-width: 500px) {
+      .line-up-wrapper {
+        width: auto;
+        margin: 0;
+        padding: 0 10px; } }
+  @media (max-width: 500px) {
+    .line-up .festival-heading {
+      font-family: 'Adelle_Bold';
+      font-size: 24px;
+      line-height: 32px;
+      color: #000000; } }
+  .line-up__title {
+    font-family: 'Adelle_Bold';
+    font-size: 56px;
+    line-height: 80px;
+    color: #000000;
+    padding-bottom: 88px; }
+    @media (max-width: 500px) {
+      .line-up__title {
+        font-family: 'Adelle_Bold';
+        font-size: 32px;
+        line-height: 40px;
+        color: #000000; } }
+  .line-up__description {
+    font-family: 'Adelle_Reg';
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    padding-bottom: 80px; }
+
+.tab-days-content {
+  display: flex; }
+  @media (max-width: 500px) {
+    .tab-days-content {
+      flex-direction: column; } }
+
+.day-name {
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  text-transform: uppercase;
+  height: 48px;
+  padding: 0 32px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #000000;
+  cursor: pointer;
+  margin-right: 8px; }
+  @media (max-width: 500px) {
+    .day-name {
+      margin-right: 8px;
+      display: block;
+      width: 74%;
+      margin-left: 6px; } }
+
+.tab-day-name {
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease; }
+  .tab-day-name:hover .day-name {
+    background-color: #000000;
+    color: #FFFFFF; }
+  .tab-day-name:hover .triangle {
+    visibility: visible; }
+
+.color-day-btn {
+  background-color: #000000;
+  color: #FFFFFF; }
+
+.triangle {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid #000000;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%); }
+  @media (max-width: 500px) {
+    .triangle {
+      left: 88%;
+      transform: translate(-50%);
+      top: -31px;
+      border-top: 10px solid #FFFFFF;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent; } }
+
+.show-Triangle {
+  visibility: visible; }
+
+.show-content {
+  display: flex; }
+
+.hide {
+  display: none; }
+
+.event-plan {
+  justify-content: center; }
+  @media (max-width: 500px) {
+    .event-plan {
+      flex-direction: column;
+      padding: 0 10px; } }
+  .event-plan__bands {
+    display: flex;
+    align-items: center;
+    margin-top: 45px; }
+  .event-plan-start {
+    font-family: 'Proxima_Bold';
+    font-size: 17px;
+    line-height: 28px;
+    color: #000000;
+    padding-right: 25px; }
+  .event-plan-band-name {
+    background-color: white;
+    width: 289px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-family: 'Adelle_Reg';
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    border-right: 4px solid #00D79F;
+    margin-right: 15px; }
+
+.hiphop {
+  border-right: 4px solid #D81B60; }
+
+.indie {
+  border-right: 4px solid #00D79F; }
+
+.jazz {
+  border-right: 4px solid #FDD835; }
+
+.poprock {
+  border-right: 4px solid #3949AB; }
+
+.festival-video-teaser {
+  height: 392px;
+  width: 100%; }
+
+.information {
+  width: 50%;
+  margin-left: 232px;
+  padding-bottom: 88px; }
+  @media (max-width: 500px) {
+    .information {
+      width: auto;
+      margin: 0;
+      padding: 100px 10px; } }
+  .information-title {
+    margin-top: 130px;
+    font-family: 'Adelle_Bold';
+    font-size: 56px;
+    line-height: 80x;
+    color: #000000; }
+    @media (max-width: 500px) {
+      .information-title {
+        font-family: 'Adelle_Bold';
+        font-size: 32px;
+        line-height: 40px;
+        color: #000000; } }
+  .information-article {
+    font-family: 'Adelle_Reg';
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    padding: 88px 0; }
+    @media (max-width: 500px) {
+      .information-article {
+        font-family: 'Adelle_Reg';
+        font-size: 20px;
+        line-height: 32px;
+        color: #000000; } }
+
+.information-accordion-header {
+  border-bottom: 4px solid black; }
+
+.information-accordion-title {
+  font-family: 'Adelle_Bold';
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+  display: inline-block;
+  width: 85%;
+  padding-top: 45px; }
+  @media (max-width: 500px) {
+    .information-accordion-title {
+      font-family: 'Adelle_Bold';
+      font-size: 24px;
+      line-height: 32px;
+      color: #000000;
+      display: inline-block; } }
+  .information-accordion-title::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 111%;
+    background-color: #000000; }
+    @media (max-width: 500px) {
+      .information-accordion-title::after {
+        width: 130%; } }
+
+.information-accordion-trigger {
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  right: -16px; }
+
+.information-accordion-parag {
+  font-family: 'Proxima_Reg';
+  font-size: 17px;
+  line-height: 28px;
+  color: black;
+  padding: 60px 62px 24px 0; }
+
+.information-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+  -webkit-transition: max-height 0.2s ease;
+  -moz-transition: max-height 0.2s ease;
+  -ms-transition: max-height 0.2s ease;
+  -o-transition: max-height 0.2s ease; }
+
+.is-open {
+  max-height: unset; }
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 500px;
+  width: 95%; }
+
+.share-banner {
+  height: 376px;
+  width: 1440px;
+  background-color: #00D79F;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: relative; }
+  @media (max-width: 500px) {
+    .share-banner {
+      width: auto; } }
+  .share-banner-title {
+    font-family: 'Adelle_Bold';
+    font-size: 56px;
+    line-height: 80x;
+    color: #000000;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 130px;
+    margin-bottom: 25px; }
+  .share-banner-button {
+    font-family: 'Proxima_Bold';
+    font-size: 17px;
+    line-height: 28px;
+    text-transform: uppercase;
+    height: 48px;
+    padding: 0 32px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #ffff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    color: #FFFFFF; }
+  .share-banner-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 250px;
+    opacity: 0.2; }
+
+.show-next-festival {
+  display: flex;
+  background-color: #1DE9B6;
+  justify-content: center; }
+  @media (max-width: 500px) {
+    .show-next-festival {
+      display: block; } }
+  @media (max-width: 500px) {
+    .show-next-festival img {
+      width: 236px; } }
+  .show-next-festival-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1; }
+  .show-next-festival-title {
+    font-family: 'Proxima_Bold';
+    font-size: 17px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-right: 12px; }
+  .show-next-festival .rot {
+    fill: #FFFFFF; }
+
+.prev-festival-arrow {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  margin-left: 50px; }
+  @media (max-width: 500px) {
+    .prev-festival-arrow {
+      margin-left: 0; } }
+
+.next-festival-arrow {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  margin-right: 50px; }
+  @media (max-width: 500px) {
+    .next-festival-arrow {
+      margin-left: 0; } }
+
+.share-current-festival {
+  background-color: #00D79F;
+  display: flex;
+  justify-content: center;
+  padding: 88px 88px; }
+  @media (max-width: 500px) {
+    .share-current-festival {
+      background-color: #FFFFFF;
+      height: auto; } }
+  .share-current-festival-box {
+    background-color: #FFFFFF;
+    height: 544px;
+    width: 592px;
+    text-align: center; }
+    @media (max-width: 500px) {
+      .share-current-festival-box {
+        height: auto; } }
+  .share-current-festival-location {
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+    color: black;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 25px; }
+  .share-current-festival-title {
+    font-family: 'Adelle_Bold';
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 25px; }
+  .share-current-festival-link {
+    text-decoration: none;
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+    color: black; }
+
+.festival-teaser {
+  width: 100%; }
+
+.scoial-media-share-section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px; }
+
+.facebook-share {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: #3B5998; }
+  .facebook-share .facebook,
+  .facebook-share .twitter {
+    fill: #FFFFFF; }
+
+.twitter-share {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: #55ACEE; }
+
+.whatsapp-share {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: #4EC659; }
+
+.gogle-share {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: #CE2828; }
+
+.icon {
+  margin: 0 12px; }
+
+.checkout-head {
+  height: 200px;
+  width: 1440px;
+  background-color: #00D79F; }
+  @media (max-width: 500px) {
+    .checkout-head {
+      width: 100%; } }
+
+.checkout-icon {
+  position: absolute;
+  left: 50%;
+  top: 132px;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 250px; }
+  @media (max-width: 500px) {
+    .checkout-icon {
+      font-family: 'Adelle_Bold';
+      font-size: 32px;
+      line-height: 40px;
+      color: #000000; } }
+
+.checkout-title {
+  font-family: 'Adelle_Bold';
+  font-size: 56px;
+  line-height: 80x;
+  color: #000000;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  text-align: center; }
+
+.checkout-description {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Adelle_Reg';
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  padding-bottom: 88px; }
+  @media (max-width: 500px) {
+    .checkout-description {
+      font-family: 'Adelle_Reg';
+      font-size: 20px;
+      line-height: 32px;
+      color: #000000;
+      width: 100%; } }
+
+.ticket__corner {
+  background-color: #F0F0F0;
+  padding: 5px; }
+  .ticket__corner-location-date {
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+    color: black;
+    text-align: center;
+    margin-bottom: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px; }
+    @media (max-width: 500px) {
+      .ticket__corner-location-date {
+        flex-direction: column;
+        padding: 15px 0; } }
+  .ticket__corner--festival-date {
+    margin-right: 12px; }
+  .ticket__corner-subtitle {
+    font-family: 'Adelle_Bold';
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    padding-left: 120px;
+    margin-bottom: 40px;
+    padding-top: 65px; }
+
+.festival-entering-item {
+  background-color: #00D79F;
+  height: 224px;
+  width: 289px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.festival-entering-choice {
+  font-family: 'Adelle_Bold';
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+  padding-bottom: 12px;
+  color: #FFFFFF; }
+
+.festival-entering .tickets-point-rest {
+  height: auto;
+  width: 290px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px; }
+
+.festival-entering-price {
+  font-family: 'Adelle_Reg';
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  color: #FFFFFF; }
+
+.festival-entering .ticket-entering {
+  width: 150px;
+  height: 70px;
+  padding-bottom: 12px;
+  padding: 0px 5px; }
+
+.festival-entering .box {
+  height: 15px;
+  width: 15px;
+  background-color: #00D79F;
+  margin: 0 5px; }
+
+.festival-entering .is-nva {
+  background-color: #C2C2C2; }
+
+.festival-entering .festival-rest-ticket {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Proxima_Reg';
+  font-size: 13px;
+  line-height: 28px;
+  color: #00D79F;
+  background: white;
+  align-items: center;
+  padding-top: 12px; }
+  @media (max-width: 500px) {
+    .festival-entering .festival-rest-ticket {
+      width: 290px; } }
+
+.festival-entering .rest-boxe {
+  flex-direction: column; }
+
+.item-wrapper {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 500px) {
+    .item-wrapper {
+      flex-direction: column; } }
+
+.item-wrapper-2 {
+  display: flex;
+  justify-content: start;
+  padding-left: 125px; }
+  @media (max-width: 500px) {
+    .item-wrapper-2 {
+      flex-direction: column;
+      padding: 0; } }
+
+.festival-entering {
+  margin: 0 5px; }
+  @media (max-width: 500px) {
+    .festival-entering {
+      margin: 10px auto; } }
+
+.festival-ticket-counter-plus-minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px; }
+
+.ticket-btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border: 1px solid #000000;
+  background: transparent; }
+
+.festival-ticker-shower {
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  padding: 0 20px; }
+
+.line-hr {
+  background-color: black;
+  height: 2px;
+  margin-top: 88px; }
+
+.buy-tickets {
+  font-family: 'Proxima_Bold';
+  font-size: 17px;
+  line-height: 28px;
+  text-transform: uppercase;
+  height: 48px;
+  padding: 0 32px;
+  background-color: #000000;
+  outline: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 88px auto;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease; }
+  .buy-tickets:hover {
+    background-color: #C2C2C2; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale; }
+
+.main_wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative; }
+  @media screen and (max-width: 1400px) {
+    .main_wrapper {
+      width: auto; } }
+
+.show-link {
+  text-decoration: none;
+  color: black; }
+  @media (max-width: 500px) {
+    .show-link {
+      width: 100%; } }
+
+.indie {
+  border-right: none; }

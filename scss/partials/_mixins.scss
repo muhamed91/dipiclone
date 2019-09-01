@@ -1,0 +1,231 @@
+// Typografie Desktop
+
+@mixin heading1 {
+    font-family: 'Adelle_Bold';
+    font-size: 56px;
+    line-height: 80px;
+    color: $black;
+}
+
+
+@mixin heading2 {
+    font-family: 'Adelle_Bold';
+    font-size: 56px;
+    line-height: 80x;
+    color: $black;
+}
+
+@mixin heading3 {
+    font-family: 'Adelle_Bold';
+    font-size: 32px;
+    line-height: 40px;
+    color: $black;
+}
+
+@mixin festivalHeading {
+    color: $white;
+    font-family: 'Adelle_Bold';
+    font-size: 144px;
+    line-height: 144px;
+}
+
+@mixin lead {
+    font-family: 'Adelle_Reg';
+    font-size: 20px;
+    line-height: 32px;
+    color: $black;
+}
+
+@mixin copy {
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+    color: $black75;
+}
+
+@mixin footerLabel2 {
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+    color: $black75;
+}
+
+@mixin footerLabel {
+    font-family: 'Proxima_Bold';
+    font-size: 17px;
+    line-height: 28px;
+    color: $black;
+}
+
+@mixin countDownHeavy {
+    font-family: 'Proxima_Bold';
+    font-size: 32px;
+    line-height: 40px;
+    color: $white;
+}
+
+@mixin countMobile {
+    font-family: 'Proxima_Bold';
+    font-size: 24px;
+    line-height: 32px;
+    color: $white;
+}
+
+@mixin btnColor {
+    font-family: 'Proxima_Bold';
+    font-size: 17px;
+    line-height: 28px;
+    text-transform: uppercase;
+
+}
+
+@mixin btnPlus {
+    font-family: 'Proxima_Bold';
+    font-size: 17px;
+    line-height: 28px;
+
+
+}
+
+@mixin dateLikes {
+    font-family: 'Proxima_Reg';
+    font-size: 13px;
+    line-height: 28px;
+    color: $black;
+}
+
+@mixin textindie {
+    font-family: 'Proxima_Reg';
+    font-size: 13px;
+    line-height: 28px;
+    color: $indie;
+}
+
+@mixin moreRead {
+    font-family: 'Proxima_Reg';
+    font-size: 17px;
+    line-height: 28px;
+}
+
+/*----------------------------------------*/
+
+// Typografie Tablet
+
+@mixin heading1Tablet {
+    font-family: 'Adelle_Bold';
+    font-size: 48px;
+    line-height: 64px;
+    color: $black;
+}
+
+@mixin heading2Tablet {
+    font-family: 'Adelle_Bold';
+    font-size: 32px;
+    line-height: 40px;
+    color: $black;
+}
+
+@mixin festivalHeadingTablet {
+    color: $white;
+    font-family: 'Adelle_Bold';
+    font-size: 96px;
+    line-height: 100px;
+}
+
+/*----------------------------------------*/
+
+@mixin heading1Mobile {
+    font-family: 'Adelle_Bold';
+    font-size: 32px;
+    line-height: 40px;
+    color: $black;
+}
+
+
+@mixin festHeading {
+    font-family: 'Adelle_Bold';
+    font-size: 48px;
+    line-height: 40px;
+    color: $white;
+}
+
+@mixin heading2Mobile {
+    font-family: 'Adelle_Bold';
+    font-size: 24px;
+    line-height: 32px;
+    color: $black;
+}
+
+@mixin heading3Mobile {
+    font-family: 'Adelle_Reg';
+    font-size: 20px;
+    line-height: 32px;
+    color: $black;
+}
+
+@mixin festivalHeadingMobile {
+    color: $white;
+    font-family: 'Adelle_Bold';
+    font-size: 48px;
+    line-height: 40px;
+}
+
+
+/*----------------------------------------*/
+@mixin smoothFade {
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+}
+
+@mixin smoothFadeOverlay {
+    transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+}
+
+@mixin smoothFade2 {
+    transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+}
+
+
+@mixin soundsGraph($url, $pos, $mg) {
+    height: 180px;
+    background: url($url);
+    background-position-x: ($pos);
+    background-repeat: no-repeat;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: ($mg);
+}
+
+@mixin socialMedia {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+// Mobile
+
+@mixin mobile {
+    @media (max-width: 500px) {
+        @content;
+    }
+}

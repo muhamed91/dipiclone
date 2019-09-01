@@ -1,0 +1,85 @@
+.discovery {
+    &__title {
+        @include heading2;
+        text-align: center;
+        margin: 80px 0;
+
+        @include mobile {
+            @include heading1Mobile;
+        }
+    }
+
+    &__description {
+        @include lead;
+        text-align: center;
+        margin-bottom: 80px;
+
+        @include mobile {
+            @include heading3Mobile;
+        }
+    }
+
+    &__sound {
+        position: relative;
+        transform: translateX(-35px);
+        -webkit-transform: translateX(-35px);
+        -moz-transform: translateX(-35px);
+        -ms-transform: translateX(-35px);
+        -o-transform: translateX(-35px);
+        margin: 55px -45px;
+
+        &:nth-child(3) {
+            transform: translateX(-15px);
+            -webkit-transform: translateX(-15px);
+            -moz-transform: translateX(-15px);
+            -ms-transform: translateX(-15px);
+            -o-transform: translateX(-15px);
+        }
+    }
+
+
+
+
+
+    &__show-more {
+        @include btnColor;
+        display: block;
+        padding: 0 32px;
+        background: transparent;
+        outline: none;
+        border: 2px solid $black;
+        height: 48px;
+        margin: 80px auto;
+        cursor: pointer;
+
+        @include mobile {
+            width: 70%;
+        }
+    }
+
+    &__play-btn {
+        cursor: pointer;
+        padding: 25px;
+        position: absolute;
+        left: 50%;
+        top: 22%;
+        width: 30px;
+
+
+
+
+    }
+
+    .electro {
+        top: 16px;
+    }
+
+
+
+
+
+
+
+
+
+}

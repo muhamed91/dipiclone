@@ -1,0 +1,86 @@
+.festivals__filter-container {
+    background-color: $greyF0;
+    margin-top: 65px;
+    height: 100%;
+
+
+}
+
+.festivals__filter--options {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+
+    p {
+        font-family: 'Proxima_Reg';
+        font-size: 17px;
+        line-height: 28px;
+        color: $grey;
+    }
+
+    &-date {
+        display: flex;
+        align-items: center;
+
+        &-dropdown {
+            padding-right: 15px;
+        }
+    }
+
+    &-canton {
+        display: flex;
+        align-items: center;
+
+        &-text {
+            padding-right: 15px;
+        }
+
+
+    }
+
+    .filter-canton {
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &-views {
+        display: flex;
+        align-items: center;
+
+        &-content {
+            padding: 0 15px 0 10px;
+
+            @include mobile {
+                display: none;
+            }
+
+        }
+    }
+}
+
+// Add Color to the Clicked Btn
+
+.jazz__filter--color {
+    background-color: $jazz;
+}
+
+.hiphop__filter--color {
+    background-color: $hiphop;
+}
+
+.indie__filter--color {
+    background-color: $indie;
+}
+
+.poprock__filter--color {
+    background-color: $popRock;
+}
+
+.electro__filter--color {
+    background-color: $elec;
+}
+
+.static-class {
+    background-color: #C2C2C2;
+}

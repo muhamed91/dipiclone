@@ -1,0 +1,321 @@
+.overlay {
+  z-index: 1;
+  background-color: black;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0.8;
+  visibility: hidden;
+
+
+}
+
+// Toggle Classe
+.show-overlay {
+  visibility: visible;
+}
+
+overlay-list-show {
+  display: block;
+
+}
+
+
+
+
+
+.navbar__layout-overlay {
+  border: 1px solid $greyE5;
+  display: grid;
+  grid-template-columns: 440px auto 200px 240px;
+  grid-template-rows: 64px;
+  align-items: center;
+  position: fixed;
+  width: 1440px;
+
+  @include mobile {
+    width: auto;
+    grid-template-columns: 244px auto 64px 64px;
+  }
+
+
+  .navbar__menu-dark {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: center;
+    margin-left: 24px;
+    cursor: pointer;
+
+    &--close {
+      height: 100%;
+      width: 25px;
+    }
+
+    .closex {
+      fill: $white;
+    }
+
+    &--pointer-dark {
+      text-decoration: none;
+      font-family: "Proxima_Bold";
+      font-size: 17px;
+      color: $white;
+      cursor: pointer;
+      padding: 10px 10px 10px 12px;
+    }
+  }
+
+  &--login {
+    border-left: 1px solid $greyE5;
+    border-right: 1px solid $greyE5;
+    height: 100%;
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    cursor: pointer;
+    color: $white;
+
+    .login-bg {
+      fill: $white;
+    }
+
+    .profile-img {
+      margin-left: 12px;
+    }
+
+    &--pointer {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: "Proxima_Bold";
+      font-size: 17px;
+      margin-left: 12px;
+      cursor: pointer;
+      padding: 10px 10px 10px 0;
+      color: $white;
+
+
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  &--brand {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+
+    &--logo {
+      width: 150px;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .navbar__layout-overlay--brand--logo {
+      fill: $white;
+    }
+  }
+
+  &--ticket {
+    grid-column: 4/5;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 12px;
+
+    .tc-seller {
+      fill: $white;
+    }
+
+    &--pointer {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: "Proxima_Bold";
+      font-size: 17px;
+      color: $white;
+      margin-left: 12px;
+      cursor: pointer;
+      padding: 10px 10px 10px 0;
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+
+}
+
+.navbar__overlay-list-wrapper {
+  height: 205px;
+  width: 100%;
+  color: $white;
+  display: none;
+
+  .navbar__layout-overlay-list {
+    text-align: center;
+    margin-top: 250px;
+    list-style-type: none;
+    font-family: 'Adelle_Bold';
+    font-size: 56px;
+    position: fixed;
+    z-index: 1;
+    width: 1440px;
+
+
+
+    @include mobile {
+      width: auto;
+      position: fixed;
+      left: 18%;
+      top: 10px;
+
+    }
+
+    &-items {
+      @include smoothFadeOverlay;
+      padding: 25px 0;
+      cursor: pointer;
+
+      &-anchor {
+        color: $white;
+        text-decoration: none;
+
+
+      }
+
+      &:hover {
+        background-color: $white;
+
+        a {
+          color: $black;
+        }
+
+
+
+      }
+
+    }
+
+  }
+
+
+}
+
+.navbar__overlay-footer {
+  display: flex;
+  margin-top: 170px;
+  z-index: 1;
+  position: fixed;
+  width: 1440px;
+  top: 600px;
+
+
+
+  @include mobile {
+    width: 375px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  &--socialmedia {
+    display: flex;
+    justify-content: center;
+    padding-left: 344px;
+
+    @include mobile {
+      padding: 0;
+      margin-top: 0;
+    }
+
+    .facebook,
+    .instagram,
+    .snapchat,
+    .yt,
+    .youtube,
+    .twitter {
+      fill: $white;
+      margin-right: 32px;
+      height: 30px;
+      width: 30px;
+
+      &:last-of-type {
+        margin: 0;
+      }
+
+    }
+
+
+
+
+
+
+
+  }
+
+  &--searchfield {
+    padding-left: 216px;
+    padding-right: 224px;
+    width: 392px;
+
+    @include mobile {
+      padding: 0;
+    }
+
+    &-input-text {
+      display: flex;
+
+      input[type="text"] {
+        border: none;
+        border-bottom: 2px solid $white;
+        background-color: transparent;
+        appearance: none;
+        width: 100%;
+        font-size: 20px;
+        color: white;
+        padding: 5px;
+
+
+
+        @include mobile {
+          margin: 0 auto;
+          width: auto;
+          margin-bottom: 35px;
+          width: 72%;
+        }
+
+
+      }
+
+      .search-icon {
+        fill: $white;
+      }
+    }
+
+    .search-loop {
+      position: relative;
+      right: 35px;
+      top: -8px;
+      height: 40px;
+      width: 40px;
+
+      @include mobile {
+        position: absolute;
+        right: 35px;
+        top: 7px;
+        height: 21px;
+        width: 40px;
+      }
+    }
+
+  }
+
+}

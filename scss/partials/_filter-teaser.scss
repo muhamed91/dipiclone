@@ -1,0 +1,200 @@
+.filter__wrapper {
+
+    &--main-heading {
+
+        @include heading1;
+        text-align: center;
+        margin-top: 130px;
+        margin-bottom: 45px;
+
+        @include mobile {
+            @include heading1Mobile;
+        }
+
+
+
+    }
+
+    &--description {
+        @include lead;
+        text-align: center;
+
+        @include mobile {
+            @include heading3Mobile;
+            padding: 15px;
+        }
+    }
+
+
+}
+
+.filter__buttons {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -4;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    &--more-genres {
+        text-decoration: underline;
+        @include footerLabel;
+        cursor: pointer;
+        padding-bottom: 32px;
+        width: 100px;
+
+    }
+
+
+}
+
+.flt-btns {
+    height: 48px;
+    width: auto;
+    background-color: $greyC2;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    font-family: 'Proxima_Reg';
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 32px;
+
+
+    .whitey {
+        fill: white;
+    }
+
+
+}
+
+.music-icon {
+    margin-right: 24px;
+    margin-left: 12px;
+    width: 25px;
+
+}
+
+.festival-numbers {
+    margin-right: 16px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 23px;
+
+}
+
+// Show and Reset Btn
+
+.filter__results {
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--reset {
+        border: 2px solid black;
+        background: transparent;
+        color: $black;
+        @include smoothFade;
+
+        &:hover {
+            background: $black;
+            color: $white;
+        }
+    }
+
+    &--show {
+        color: $white;
+        border: 2px solid black;
+        background: $black;
+        @include smoothFade;
+
+
+        &:hover {
+            background: $greyC2;
+            border: 2px solid $greyC2
+        }
+
+    }
+
+    &--more-results {
+        justify-content: center;
+        display: flex;
+        @include smoothFade;
+        height: 0;
+        opacity: 0;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+
+
+
+}
+
+// Toggle for showing more genres
+
+.show-more-tranisition {
+    height: 80px;
+    opacity: 1;
+}
+
+// Color all SVG in the BTN section
+.show-more-genre {
+    fill: $white;
+}
+
+
+.res-btns {
+    display: block;
+    height: 48px;
+    width: 250px;
+    @include btnColor;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    margin-right: 16px;
+    z-index: 0;
+
+    @include mobile {
+        margin: 16px 0;
+    }
+
+}
+
+.big-teaser {
+    height: 450px;
+    width: 1440px;
+
+    @include mobile {
+        width: 375px;
+        height: 176px;
+    }
+
+    background-image: url('../assets/img/BigTeaser.png');
+    background-position: center center;
+    margin: 80px 0;
+    background-size: cover;
+
+}

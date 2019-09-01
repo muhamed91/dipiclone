@@ -1,0 +1,26 @@
+{
+  "name": "fetivallover-app",
+  "version": "1.0.0",
+  "description": "A Festival Lovers Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Festival",
+    "Switzerland",
+    "Lovers"
+  ],
+  "author": "Rustemi Muhamed",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "panini": "^1.6.3",
+    "prettier": "1.18.2"
+  },
+  "dependencies": {
+    "@iconfu/svg-inject": "^1.2.3",
+    "gulp-sass": "^4.0.2"
+  }
+}

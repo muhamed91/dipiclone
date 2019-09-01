@@ -1,0 +1,96 @@
+.share-current-festival {
+    background-color: $indie;
+    display: flex;
+    justify-content: center;
+
+
+    @include mobile {
+        background-color: $white;
+        height: auto;
+    }
+
+
+
+    padding: 88px 88px;
+
+    &-box {
+        background-color: $white;
+        height: 544px;
+        width: 592px;
+        text-align: center;
+
+        @include mobile {
+            height: auto;
+            ;
+        }
+
+
+    }
+
+    &-location {
+        @include copy;
+        text-align: center;
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
+    &-title {
+        @include heading3;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    &-link {
+
+        text-decoration: none;
+        @include footerLabel2;
+
+
+
+    }
+
+}
+
+.festival-teaser {
+    width: 100%;
+}
+
+.scoial-media-share-section {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.facebook-share {
+    @include socialMedia;
+    background-color: #3B5998;
+
+
+
+
+    .facebook,
+    .twitter {
+        fill: $white;
+    }
+}
+
+.twitter-share {
+    @include socialMedia;
+    background-color: #55ACEE;
+
+}
+
+.whatsapp-share {
+    @include socialMedia;
+    background-color: #4EC659;
+
+}
+
+.gogle-share {
+    @include socialMedia;
+    background-color: #CE2828;
+}
+
+.icon {
+    margin: 0 12px;
+}

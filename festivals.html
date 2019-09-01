@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./node_modules/@iconfu/svg-inject/dist/svg-inject.min.js"></script>
+    <title>Festival Lovers</title>
+</head>
+
+<body>
+    <div class="main_wrapper" id="app">
+        <!-- Overlay toggle when the Ham-btn get clicked -->
+        <div class="overlay">
+            <div class="navbar__layout-overlay">
+                <nav class="navbar__menu-dark">
+                    <div class="navbar__menu--close">
+                        <img src="assets/icons/navigation_schliessen.svg" onload="SVGInject(this)" alt="close-icon" />
+                    </div>
+                    <a href="#" class="navbar__menu-dark--pointer-dark">Schliessen</a>
+                </nav>
+                <div class="navbar__layout-overlay--brand">
+                    <img src="assets/icons/navigation_logo.svg" onload="SVGInject(this)" alt="festival-lovers"
+                        class="navbar__layout-overlay--brand--logo" />
+                </div>
+                <div class="navbar__layout-overlay--login">
+                    <img src="assets/icons/navigation_login.svg" alt="login-pic" class="login-avatar"
+                        onload="SVGInject(this)" />
+                    <a href="#" class="navbar__layout-overlay--login--pointer">Login</a>
+                </div>
+                <div class="navbar__layout-overlay--ticket">
+                    <a href="#">
+                        <div class="navbar__layout-overlay--ticket--seller">
+                            <img src="assets/icons/navigation_ticketkauf.svg" alt="ticket-kauf"
+                                onload="SVGInject(this)" />
+                        </div>
+                    </a>
+                    <a href="#" class="navbar__layout-overlay--ticket--pointer">Tickets Kaufen</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar__overlay-list-wrapper">
+            <ul class="navbar__layout-overlay-list">
+                <li class="navbar__layout-overlay-list-items">
+                    <a class="navbar__layout-overlay-list-items-anchor" href="festivals.html">Festivals</a>
+                </li>
+                <li class="navbar__layout-overlay-list-items">
+                    <a class="navbar__layout-overlay-list-items-anchor" href="#"></a>
+                </li>
+                <li class="navbar__layout-overlay-list-items">
+                    <a class="navbar__layout-overlay-list-items-anchor" href="#"></a>News
+                </li>
+            </ul>
+            <div class="navbar__overlay-footer">
+                <div class="navbar__overlay-footer--socialmedia">
+                    <img src="assets/icons/socialmedia_facebook.svg" onload="SVGInject(this)" class="facebook" />
+                    <img src="assets/icons/socialmedia_instagram.svg" onload="SVGInject(this)" class="instagram" />
+                    <img src="assets/icons/socialmedia_snapchat.svg" onload="SVGInject(this)" class="snapchat" />
+                    <img src="assets/icons/socialmedia_youtube.svg" onload="SVGInject(this)" class="youtube" />
+                    <img src="assets/icons/socialmedia_twitter.svg" onload="SVGInject(this)" class="twitter" />
+                </div>
+                <div class="navbar__overlay-footer--searchfield">
+                    <form action="" class="navbar__overlay-footer--searchfield-input-text">
+                        <input type="text" name="search" />
+                        <img src="assets/icons/navigation_suche.svg" onload="SVGInject(this)" alt="search-icon"
+                            class="search-loop" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Overlay toggle when the Ham-btn get clicked -->
+        <header class="navbar__layout">
+            <nav class="navbar__menu">
+                <div class="navbar__menu--hamburger">
+                    <img src="assets/icons/navigation_menu.svg" onload="SVGInject(this)" alt="nav-menu" />
+                </div>
+                <a href="#" class="navbar__menu--pointer">Menu</a>
+            </nav>
+            <div class="navbar__layout--brand">
+                <img src="assets/icons/navigation_logo.svg" alt="festival-lovers" class="navbar__layout--brand--logo" />
+            </div>
+            <div class="navbar__layout--login">
+                <img src="assets/icons/navigation_login.svg" alt="login-pic" class="login-avatar"
+                    onload="SVGInject(this)" />
+                <a href="#" class="navbar__layout--login--pointer">Login</a>
+            </div>
+            <div class="navbar__layout--ticket">
+                <a href="#">
+                    <div class="navbar__layout--ticket--seller">
+                        <img src="assets/icons/navigation_ticketkauf.svg" alt="ticket-kauf" onload="SVGInject(this)" />
+                    </div>
+                </a>
+                <a href="#" class="navbar__layout--ticket--pointer">Tickets Kaufen</a>
+            </div>
+        </header>
+        <!-- Breadcrumb -->
+        <div class="navbar__layout--breadcrumb">
+            <div class="navbar__layout--breadcrumb--flex-wrapper">
+                <img src="assets/icons/navigation_home.svg" alt="home-navigation" onload="SVGInject(this)"
+                    class="breadcrumb-icon">
+                <img src="assets/icons/steuerung_pfeil_rechts.svg" onload="SVGInject(this)" alt="pfeil-rechts"
+                    class="breadcrumb-arrow-right">
+                <p class="breadcrumb-current-section">Festivals</p>
+                <div class="round-arrow">
+                    <img src="assets/icons/steuerung_dropdown.svg" onload="SVGInject(this)" alt=" pfeil-unten"
+                        class="breadcrumb-arrow-down">
+                </div>
+            </div>
+        </div>
+        <!-- Landing Page part 1 -->
+        <div class="filter__wrapper">
+            <h1 class="filter__wrapper--main-heading">
+                Alles für deinen Musikgeschmack
+            </h1>
+            <p class="filter__wrapper--description">
+                Unsere FestivalLovers verdienen nur das Beste. Wir bringen euch <br> alle Festivals, Stars & Bands sowie
+                Infos für einen genialen <br> und unvergessenlichen Musiksommer.
+            </p>
+            <div class="filter__buttons">
+                <button class=" flt-btns filter__buttons--filter-button-jazz">
+                    <img class="music-icon" src="./assets/icons/music_jazz.svg" onload="SVGInject(this)"
+                        alt="jazz" />Jazz
+                    <p class="festival-numbers jazz-event"></p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-hiphop">
+                    <img class="music-icon" src="./assets/icons/music_hiphop.svg" onload="SVGInject(this)"
+                        alt="hiphop" />HipHop
+                    <p class="festival-numbers hiphop-event"></p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-indie">
+                    <img class="music-icon" src="./assets/icons/music_indie.svg" onload="SVGInject(this)"
+                        alt="hiphop" />Indie
+                    <p class="festival-numbers">11</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-poprock">
+                    <img class="music-icon" src="./assets/icons/music_poprock.svg" onload="SVGInject(this)"
+                        alt="hiphop" />
+                    Pop & Rock
+                    <p class="festival-numbers">35</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-electronic">
+                    <img class="music-icon" src="./assets/icons/music_electronic.svg" onload="SVGInject(this)"
+                        alt="hiphop" />Electronic
+                    <p class="festival-numbers">28</p>
+                </button>
+                <p class="filter__buttons--more-genres">Mehr Genres</p>
+            </div>
+            <!-- Toggle Class More Genres -->
+            <div class="filter__results--more-results">
+                <button class=" flt-btns filter__buttons--filter-button-reggae">
+                    <img class="music-icon" src="./assets/icons/music_reggae.svg" onload="SVGInject(this)"
+                        alt="reage" />
+                    Reggae
+                    <p class="festival-numbers">20</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-rnb">
+                    <img class="music-icon" src="./assets/icons/music_rnb.svg" onload="SVGInject(this)" alt="rnb" />
+                    RnB
+                    <p class="festival-numbers">2</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-country">
+                    <img class="music-icon" src="./assets/icons/music_country.svg" onload="SVGInject(this)" alt="rnb" />
+                    Country
+                    <p class="festival-numbers">3</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-alternative">
+                    <img class="music-icon" src="./assets/icons/music_alternative.svg" onload="SVGInject(this)"
+                        alt="rnb" />
+                    Alternative
+                    <p class="festival-numbers">4</p>
+                </button>
+            </div>
+            <!-- Toggle Class More Genres -->
+            <div class="filter__results">
+                <button class=" res-btns filter__results--reset">
+                    Filter Zurücksetzen
+                </button>
+            </div>
+        </div>
+        <!-- Filter Section -->
+        <div class="festivals__filter-container">
+            <div class="festivals__teaseer-container">
+                <div class="festivals__filter--options">
+                    <div class="festivals__filter--options-date">
+                        <p class="festivals__filter--options-date-dropdown">Datum</p>
+                        <div class="festivals__filter--options-date-dropdown-icon">
+                            <img src="assets/icons/steuerung_sortierung.svg" alt="sorting-icon" class="drowpdon-icon">
+                        </div>
+                    </div>
+                    <div class="festivals__filter--options-canton">
+                        <p class="festivals__filter--options-canton-text">Kanton <span
+                                class="filter-canton">auswählen</span></p>
+                        <img src="assets/icons/steuerung_dropdown.svg" alt="festivals__filter--options-canton-icon"
+                            class="drowpdon-icon">
+                    </div>
+                    <div class="festivals__filter--options-views">
+                        <img src="assets/icons/steuerung_kacheln.svg" alt="festivals__filter--options-view-grid"
+                            class="view-grid">
+                        <p class="festivals__filter--options-views-content">Kacheln</p>
+                        <img src="assets/icons/steuerung_liste.svg" alt="festivals__filter--options-view-list"
+                            class="view-list">
+                        <p class="festivals__filter--options-views-content">Liste</p>
+                    </div>
+                </div>
+                <!-- Grid Layout -->
+                <div class="event__teaser-filter"></div>
+
+            </div>
+            <div class="event__teaser-wrapper">
+                <!-- Inject from API -->
+            </div>
+            <div class="event__list-teaser-filter">
+
+            </div>
+            <!-- Grid Layout -->
+            <!-- List Layout -->
+            <button class="event__show-more">Mehr anzeigen</button>
+        </div>
+    </div>
+    <footer class="main__footer">
+        <div class="main__footer--nav-map">
+            <ul class="main__footer--nav">
+                <li><a class="main_footer--nav-links" href="#">Festivals</a></li>
+                <li><a class="main_footer--nav-links" href="#">Magazin</a></li>
+                <li><a class="main_footer--nav-links" href="#">News</a></li>
+            </ul>
+        </div>
+        <div class="main__footer--social">
+            <img src="assets/icons/socialmedia_facebook.svg" onload="SVGInject(this)" class="facebook" />
+            <img src="assets/icons/socialmedia_instagram.svg" onload="SVGInject(this)" class="instagram" />
+            <img src="assets/icons/socialmedia_snapchat.svg" onload="SVGInject(this)" class="snapchat" />
+            <img src="assets/icons/socialmedia_youtube.svg" onload="SVGInject(this)" class="youtube" />
+            <img src="assets/icons/socialmedia_twitter.svg" onload="SVGInject(this)" class="twitter" />
+        </div>
+        <div class="main__footer--bt-arrow">
+            <p class="main__footer--bt-text">Back to Top</p>
+            <img class="main__footer--bt-arrow-icon" src="assets/icons/navigation_zuru╠êck.svg" class="back-to-top"
+                onload="SVGInject(this)" />
+        </div>
+    </footer>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/sound.js"></script>
+    <script src="./js/fetch_api.js"></script>
+    <script src="./js/filter.js"></script>
+</body>
+
+</html>

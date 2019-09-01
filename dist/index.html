@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./node_modules/@iconfu/svg-inject/dist/svg-inject.min.js"></script>
+    <title>Festival Lovers</title>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="navbar__layout-overlay">
+            <nav class="navbar__menu-dark">
+                <div class="navbar__menu--close">
+                    <img src="assets/icons/navigation_schliessen.svg" onload="SVGInject(this)" alt="close-icon" />
+                </div>
+                <a href="#" class="navbar__menu-dark--pointer-dark">Schliessen</a>
+            </nav>
+            <div class="navbar__layout-overlay--brand">
+                <img src="assets/icons/navigation_logo.svg" onload="SVGInject(this)" alt="festival-lovers"
+                    class="navbar__layout-overlay--brand--logo" />
+            </div>
+            <div class="navbar__layout-overlay--login">
+                <img src="assets/icons/navigation_login.svg" alt="login-pic" class="login-avatar"
+                    onload="SVGInject(this)" />
+                <a href="#" class="navbar__layout-overlay--login--pointer">Login</a>
+            </div>
+            <div class="navbar__layout-overlay--ticket">
+                <a href="#">
+                    <div class="navbar__layout-overlay--ticket--seller">
+                        <img src="assets/icons/navigation_ticketkauf.svg" alt="ticket-kauf" onload="SVGInject(this)" />
+                    </div>
+                </a>
+                <a href="#" class="navbar__layout-overlay--ticket--pointer">Tickets Kaufen</a>
+            </div>
+        </div>
+    </div>
+    <div class="navbar__overlay-list-wrapper" style="display: none">
+        <ul class="navbar__layout-overlay-list">
+            <li class="navbar__layout-overlay-list-items">
+                <a href="#"></a>Festivals
+            </li>
+            <li class="navbar__layout-overlay-list-items">
+                <a href="#"></a>Magazin
+            </li>
+            <li class="navbar__layout-overlay-list-items">
+                <a href="#"></a>News
+            </li>
+        </ul>
+        <div class="navbar__overlay-footer">
+            <div class="navbar__overlay-footer--socialmedia">
+                <img src="assets/icons/socialmedia_facebook.svg" onload="SVGInject(this)" class="facebook" />
+                <img src="assets/icons/socialmedia_instagram.svg" onload="SVGInject(this)" class="instagram" />
+                <img src="assets/icons/socialmedia_snapchat.svg" onload="SVGInject(this)" class="snapchat" />
+                <img src="assets/icons/socialmedia_youtube.svg" onload="SVGInject(this)" class="youtube" />
+                <img src="assets/icons/socialmedia_twitter.svg" onload="SVGInject(this)" class="twitter" />
+            </div>
+            <div class="navbar__overlay-footer--searchfield">
+                <form action="" class="navbar__overlay-footer--searchfield-input-text">
+                    <input type="text" name="search" />
+                    <img src="assets/icons/navigation_suche.svg" onload="SVGInject(this)" alt="search-icon"
+                        class="search-loop" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Overlay toggle when the Ham-btn get clicked -->
+    <header class="navbar__layout">
+        <nav class="navbar__menu">
+            <div class="navbar__menu--hamburger">
+                <img src="assets/icons/navigation_menu.svg" onload="SVGInject(this)" alt="nav-menu" />
+            </div>
+            <a href="#" class="navbar__menu--pointer">Menu</a>
+        </nav>
+        <div class="navbar__layout--brand">
+            <img src="assets/icons/navigation_logo.svg" alt="festival-lovers" class="navbar__layout--brand--logo" />
+        </div>
+        <div class="navbar__layout--login">
+            <img src="assets/icons/navigation_login.svg" alt="login-pic" class="login-avatar" onload="SVGInject(this)" />
+            <a href="#" class="navbar__layout--login--pointer">Login</a>
+        </div>
+        <div class="navbar__layout--ticket">
+            <a href="#">
+                <div class="navbar__layout--ticket--seller">
+                    <img src="assets/icons/navigation_ticketkauf.svg" alt="ticket-kauf" onload="SVGInject(this)" />
+                </div>
+            </a>
+            <a href="#" class="navbar__layout--ticket--pointer">Tickets Kaufen</a>
+        </div>
+    </header>    <div class="main_wrapper" id="app">
+        <!-- Overlay toggle when the Ham-btn get clicked -->
+        <div class="overlay">
+            <div class="navbar__layout-overlay">
+                <nav class="navbar__menu-dark">
+                    <div class="navbar__menu--close">
+                        <img src="assets/icons/navigation_schliessen.svg" onload="SVGInject(this)" alt="close-icon" />
+                    </div>
+                    <a href="#" class="navbar__menu-dark--pointer-dark">Schliessen</a>
+                </nav>
+                <div class="navbar__layout-overlay--brand">
+                    <img src="assets/icons/navigation_logo.svg" onload="SVGInject(this)" alt="festival-lovers"
+                        class="navbar__layout-overlay--brand--logo" />
+                </div>
+                <div class="navbar__layout-overlay--login">
+                    <img src="assets/icons/navigation_login.svg" alt="login-pic" class="login-avatar"
+                        onload="SVGInject(this)" />
+                    <a href="#" class="navbar__layout-overlay--login--pointer">Login</a>
+                </div>
+                <div class="navbar__layout-overlay--ticket">
+                    <a href="#">
+                        <div class="navbar__layout-overlay--ticket--seller">
+                            <img src="assets/icons/navigation_ticketkauf.svg" alt="ticket-kauf" onload="SVGInject(this)" />
+                        </div>
+                    </a>
+                    <a href="#" class="navbar__layout-overlay--ticket--pointer">Tickets Kaufen</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar__overlay-list-wrapper" style="display: none">
+            <ul class="navbar__layout-overlay-list">
+                <li class="navbar__layout-overlay-list-items">
+                    <a href="#"></a>Festivals
+                </li>
+                <li class="navbar__layout-overlay-list-items">
+                    <a href="#"></a>Magazin
+                </li>
+                <li class="navbar__layout-overlay-list-items">
+                    <a href="#"></a>News
+                </li>
+            </ul>
+            <div class="navbar__overlay-footer">
+                <div class="navbar__overlay-footer--socialmedia">
+                    <img src="assets/icons/socialmedia_facebook.svg" onload="SVGInject(this)" class="facebook" />
+                    <img src="assets/icons/socialmedia_instagram.svg" onload="SVGInject(this)" class="instagram" />
+                    <img src="assets/icons/socialmedia_snapchat.svg" onload="SVGInject(this)" class="snapchat" />
+                    <img src="assets/icons/socialmedia_youtube.svg" onload="SVGInject(this)" class="youtube" />
+                    <img src="assets/icons/socialmedia_twitter.svg" onload="SVGInject(this)" class="twitter" />
+                </div>
+                <div class="navbar__overlay-footer--searchfield">
+                    <form action="" class="navbar__overlay-footer--searchfield-input-text">
+                        <input type="text" name="search" />
+                        <img src="assets/icons/navigation_suche.svg" onload="SVGInject(this)" alt="search-icon"
+                            class="search-loop" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Overlay toggle when the Ham-btn get clicked -->
+        <header class="navbar__layout">
+            <nav class="navbar__menu">
+                <div class="navbar__menu--hamburger">
+                    <img src="assets/icons/navigation_menu.svg" onload="SVGInject(this)" alt="nav-menu" />
+                </div>
+                <a href="#" class="navbar__menu--pointer">Menu</a>
+            </nav>
+            <div class="navbar__layout--brand">
+                <img src="assets/icons/navigation_logo.svg" alt="festival-lovers" class="navbar__layout--brand--logo" />
+            </div>
+            <div class="navbar__layout--login">
+                <img src="assets/icons/navigation_login.svg" alt="login-pic" class="login-avatar"
+                    onload="SVGInject(this)" />
+                <a href="#" class="navbar__layout--login--pointer">Login</a>
+            </div>
+            <div class="navbar__layout--ticket">
+                <a href="#">
+                    <div class="navbar__layout--ticket--seller">
+                        <img src="assets/icons/navigation_ticketkauf.svg" alt="ticket-kauf" onload="SVGInject(this)" />
+                    </div>
+                </a>
+                <a href="#" class="navbar__layout--ticket--pointer">Tickets Kaufen</a>
+            </div>
+        </header>
+        <!-- Landing Page part 1 -->
+        <div class="filter__wrapper">
+            <h1 class="filter__wrapper--main-heading">
+                Auf Welche Musik stehst du?
+            </h1>
+            <p class="filter__wrapper--description">
+                Egal auf was du stehst wir haben alles für deinen Musikgeschmack
+                <br />
+                und garantieren dir eine erlebnisreiche Festivalzeit.
+            </p>
+            <div class="filter__buttons">
+                <button class=" flt-btns filter__buttons--filter-button-jazz">
+                    <img class="music-icon" src="./assets/icons/music_jazz.svg" onload="SVGInject(this)" alt="jazz" />Jazz
+                    <p class="festival-numbers">20</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-hiphop">
+                    <img class="music-icon" src="./assets/icons/music_hiphop.svg" onload="SVGInject(this)"
+                        alt="hiphop" />HipHop
+                    <p class="festival-numbers">9</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-indie">
+                    <img class="music-icon" src="./assets/icons/music_indie.svg" onload="SVGInject(this)"
+                        alt="hiphop" />Indie
+                    <p class="festival-numbers">11</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-poprock">
+                    <img class="music-icon" src="./assets/icons/music_poprock.svg" onload="SVGInject(this)" alt="hiphop" />
+                    Pop & Rock
+                    <p class="festival-numbers">35</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-electronic">
+                    <img class="music-icon" src="./assets/icons/music_electronic.svg" onload="SVGInject(this)"
+                        alt="hiphop" />Electronic
+                    <p class="festival-numbers">28</p>
+                </button>
+                <p class="filter__buttons--more-genres">Mehr Genres</p>
+            </div>
+            <!-- Toggle Class More Genres -->
+            <div class="filter__results--more-results">
+                <button class=" flt-btns filter__buttons--filter-button-reggae">
+                    <img class="music-icon" src="./assets/icons/music_reggae.svg" onload="SVGInject(this)" alt="reage" />
+                    Reggae
+                    <p class="festival-numbers">20</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-rnb">
+                    <img class="music-icon" src="./assets/icons/music_rnb.svg" onload="SVGInject(this)" alt="rnb" />
+                    RnB
+                    <p class="festival-numbers">2</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-country">
+                    <img class="music-icon" src="./assets/icons/music_country.svg" onload="SVGInject(this)" alt="rnb" />
+                    Country
+                    <p class="festival-numbers">3</p>
+                </button>
+                <button class=" flt-btns filter__buttons--filter-button-alternative">
+                    <img class="music-icon" src="./assets/icons/music_alternative.svg" onload="SVGInject(this)" alt="rnb" />
+                    Alternative
+                    <p class="festival-numbers">4</p>
+                </button>
+            </div>
+            <!-- Toggle Class More Genres -->
+            <div class="filter__results">
+                <button class=" res-btns filter__results--reset">
+                    Filter Zurücksetzen
+                </button>
+                <button class=" res-btns filter__results--show">
+                    Ergebnis Anzeigen
+                </button>
+            </div>
+        </div>
+        <!-- Big teaser Home -->
+        <div class="big-teaser"></div>
+        <section class="magazin">
+            <h2 class="magazin__heading">Magazin</h2>
+            <div class="magazin__article--wrapper">
+                <div class="magazin__article--box">
+                    <h3 class="magazin__article--box--title">
+                        Einfach bloss nichts vergessen
+                    </h3>
+                    <p class="magazin__article--box--text">
+                        Zelt, Schlafsack, Isomatte vergessen: 3 Tage wach! Regenjacke,
+                        Mütze, Handtuch: 3 Tage nass! Zahnbürste, Deo, Socken: 3 Tage
+                        baah! Es geht auch anders. Der Festivalguide Check gegen Alzheimer
+                        und Co.
+                    </p>
+                </div>
+                <div class="magazin__article--box">
+                    <h3 class="magazin__article--box--title">
+                        Wie soll ich mich bei Gewitter verhalten?
+                    </h3>
+                    <p class="magazin__article--box--text">
+                        Die Sturm- und Gewitterwarnungen auf Festivals nehmen zu.
+                        Blitzeinschläge führen immer wieder zu zahlreichen Verletzten. Da
+                        wir nicht davon ausgehen können, dass sich diese Entwicklung
+                        wieder umkehrt, müssen wir damit rechnen, dass Festivals immer
+                        wieder davon betroffen sein werden. Was sollte man also beachten?
+                    </p>
+                </div>
+                <div class="magazin__article--box">
+                    <h3 class="magazin__article--box--title">
+                        7 Life Hacks für den Festivalbesuch
+                    </h3>
+                    <p class="magazin__article--box--text">
+                        Mit diesen Tricks macht ihr euch das Campen auf dem Festival noch
+                        leichter. Es gibt viele kreative Lösungen mit Einmalseife,
+                        Klopapierspender, Grillanzünder, Kaffebeutel und Strohhalmen.
+                    </p>
+                </div>
+                <div class="magazin__article--box">
+                    <h3 class="magazin__article--box--title">
+                        Erste Hilfe und die Reiseapotheke
+                    </h3>
+                    <p class="magazin__article--box--text">
+                        Was der Arzt rät: Sonnenstich, Kater, Fuss umgeknickt … Festivals
+                        stecken voller versteckten Gefahren. Wir haben unseren Hausarzt
+                        angerufen und gefragt, was man unbedingt bedenken und beachten
+                        sollte damit man wieder gesund und munter vom Festival nach Hause
+                        kommt.
+                    </p>
+                </div>
+                <div class="magazin__article--box">
+                    <h3 class="magazin__article--box--title">
+                        Tipps zum Bier kaltstellen
+                    </h3>
+                    <p class="magazin__article--box--text">
+                        Mit diesen Ratschlägen habt ihr auch auf dem Festival immer kühles
+                        Bier. Was will man noch mehr.
+                    </p>
+                </div>
+                <div class="magazin__article--box">
+                    <h3 class="magazin__article--box--title">
+                        Wo stelle ich mein Zelt auf?
+                    </h3>
+                    <p class="magazin__article--box--text">
+                        Der prefekt Platz auf dem Campingplatz muss zuerst gefunden
+                        werden. Ältere Festivalbesucher können bestätigen: Die Auswahl des
+                        Zeltplatzes ist ein Lernen durch Schmerzen. Wir möchten euch daher
+                        gut vorbereiten um euch ein paar Qualen ersparen zu können.
+                    </p>
+                </div>
+            </div>
+            <button class="magazin__show-more">Mehr anzeigen</button>
+        </section>
+        <section class="advertising">
+            <div class="advertising__banner">
+                <img src="./assets/img/iphone.png" alt="iphone-7" class="advertising__banner--phone" />
+                <div class="advertising__banner--call-action">
+                    <h2 class="advertising__banner--call-action-text">
+                        Mit der App unabhängig <br />
+                        am Festival feiern.
+                    </h2>
+                    <div class="advertising__banner--download-btn">
+                        <button class="advertising__banner--donwload-btn-app">
+                            App Downloaden
+                        </button>
+                        <img src="./assets/icons/AppStore.svg" alt="" class="advertising__banner--donwload-btn-store" />
+                        <img src="./assets/icons/PlayStore.svg" alt="" class="advertising__banner--donwload-btn-store" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discovery">
+            <h2 class="discovery__title">Entdeckung</h2>
+            <p class="discovery__description">
+                Sei offen für neues und geniesse unerwartete Musikerlebnisse.<br />
+                Höre dir die Samples an und entdecke deine Leidenschaften.
+            </p>
+            <div class="discovery__sound">
+                <img src="./assets/icons/detail_video_play.svg" alt="play-button" class="discovery__play-btn" />
+                <img src="./assets/icons/Jazz.svg" class="svg_equalizer" alt="jazz_equalizer" />
+            </div>
+            <div class="discovery__sound">
+                <img src="./assets/icons/detail_video_play.svg" alt="play-button" class="discovery__play-btn" />
+                <img src="./assets/icons/HipHop.svg" class="svg_equalizer" alt="hiphop_equalizer" />
+            </div>
+            <div class="discovery__sound">
+                <img src="./assets/icons/detail_video_play.svg" alt="play-button" class="discovery__play-btn" />
+                <img src="./assets/icons/Indie.svg" class="svg_equalizer" alt="indie_equalizer" />
+            </div>
+            <div class="discovery__sound">
+                <img src="./assets/icons/detail_video_play.svg" alt="play-button" class="discovery__play-btn indie" />
+                <img src="./assets/icons/PopRock.svg" class="svg_equalizer" alt="poprock_equalizer" />
+            </div>
+            <div class="discovery__sound">
+                <img src="./assets/icons/detail_video_play.svg" alt="play-button" class="discovery__play-btn electro" />
+                <img src="./assets/icons/Electronic.svg" class="svg_equalizer" alt="electronic_equalizer" />
+            </div>
+            <button class="discovery__show-more">Mehr Samples</button>
+        </section>
+        <section class="news">
+            <h2 class="news__title">News</h2>
+            <div class="news__cards--wrapper">
+                <div class="news_col-1">
+                    <div class="news__card">
+                        <div class="news__card--img-plc">
+                            <img src="./assets/img/Image-2.png" alt="" class="news__card--img-plc-picture" />
+                            <p class="news__card--date">3.Jun 2016</p>
+                            <p class="news__card--content-hashes">
+                                #festivallovers are you ready for a #competition #follow
+                                @envirofoneshop and we’ll announce next week #festival
+                            </p>
+                            <div class="news__card--likeometer">
+                                <img src="./assets/icons/detail_like.svg" alt=""
+                                    class="news__card--likeometer-heart-icon" />
+                                <p class="news__card--like-counter">15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__card">
+                        <div class="news__card--img-plc">
+                            <p class="news__card--date">3.Jun 2016</p>
+                            <p class="news__card--content-hashes">
+                                Will crowdfunding festivals be a new trend? #festivallovers
+                            </p>
+                            <div class="news__card--likeometer">
+                                <img src="./assets/icons/detail_like.svg" alt=""
+                                    class="news__card--likeometer-heart-icon" />
+                                <p class="news__card--like-counter">39</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End news_col-1 -->
+                <div class="news_col-2">
+                    <div class="news__card">
+                        <div class="news__card--img-plc">
+                            <p class="news__card--date">3.Jun 2016</p>
+                            <p class="news__card--content-hashes">
+                                #festivallovers are you ready for a #competition #follow
+                                @envirofoneshop and we’ll announce next week #festival
+                            </p>
+                            <div class="news__card--likeometer">
+                                <img src="./assets/icons/detail_like.svg" alt=""
+                                    class="news__card--likeometer-heart-icon" />
+                                <p class="news__card--like-counter">54</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__card">
+                        <div class="news__card--img-plc">
+                            <img src="./assets/img/Image-5@2x.png" alt="" class="news__card--img-plc-picture" />
+                            <p class="news__card--date">3.Jun 2016</p>
+                            <p class="news__card--content-hashes">
+                                Geniesse den Sommer mit … #festival #musik #electro #chill
+                                #crazy #summer #ferien #farben #freunde
+                            </p>
+                            <div class="news__card--likeometer">
+                                <img src="./assets/icons/detail_like_filled.svg" alt=""
+                                    class="news__card--likeometer-heart-icon" />
+                                <p class="news__card--like-counter">77</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End news_col-2 -->
+                <div class="news_col-3">
+                    <div class="news__card">
+                        <div class="news__card--img-plc">
+                            <img src="./assets/img/Image-3@2x.png" alt="" class="news__card--img-plc-picture" />
+                            <p class="news__card--date">1m</p>
+                            <p class="news__card--content-hashes">
+                                #jazzfest #festival #homeland #weekend
+                            </p>
+                            <div class="news__card--likeometer">
+                                <img src="./assets/icons/detail_like_filled.svg" alt=""
+                                    class="news__card--likeometer-heart-icon" />
+                                <p class="news__card--like-counter">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__card">
+                        <div class="news__card--img-plc">
+                            <p class="news__card--date">3.Jun 2016</p>
+                            <p class="news__card--content-hashes">
+                                @festivallovers are the best, I’m so much #inlove with your
+                                #beautiful website
+                            </p>
+                            <div class="news__card--likeometer">
+                                <img src="./assets/icons/detail_like.svg" alt=""
+                                    class="news__card--likeometer-heart-icon" />
+                                <p class="news__card--like-counter">6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End news_col-3 -->
+                <div class="news_col-4">
+                    <div class="news__card">
+                        <div class="news__card--img-plc">
+                            <p class="news__card--date">1m</p>
+                            <p class="news__card--content-hashes">
+                                #festivallovers are you ready for a #competition #follow
+                                @envirofoneshop and we’ll announce next week #festival
+                            </p>
+                            <div class="news__card--likeometer">
+                                <img src="./assets/icons/detail_like.svg" alt=""
+                                    class="news__card--likeometer-heart-icon" />
+                                <p class="news__card--like-counter">26</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__card">
+                        <div class="news__card--img-plc">
+                            <img src="./assets/img/Image-8@2x.png" alt="" class="news__card--img-plc-picture" />
+                            <p class="news__card--date">3.Jun 2016</p>
+                            <p class="news__card--content-hashes">
+                                Thunder clouds … #pyramid #summer #clouds #thunder #sky
+                                #skyporn #sunset #festival #music
+                            </p>
+                            <div class="news__card--likeometer">
+                                <img src="./assets/icons/detail_like.svg" alt=""
+                                    class="news__card--likeometer-heart-icon" />
+                                <p class="news__card--like-counter">124</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End news_col-4 -->
+                <div class="news_col-5">
+                    <div class="news__card">
+                        <div class="news__card--img-plc">
+                            <img src="./assets/img/Image-stiefel.png" alt="" class="news__card--img-plc-picture" />
+                            <p class="news__card--date">4h</p>
+                            <p class="news__card--content-hashes">
+                                #festivallovers are you ready for a #competition #follow
+                                @envirofoneshop and we’ll announce next week #festival
+                            </p>
+                            <div class="news__card--likeometer">
+                                <img src="./assets/icons/detail_like.svg" alt=""
+                                    class="news__card--likeometer-heart-icon" />
+                                <p class="news__card--like-counter">15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__card">
+                        <div class="news__card--img-plc">
+                            <img src="./assets/img/Image@2x.png" alt="" class="news__card--img-plc-picture" />
+                            <p class="news__card--date">Twitter 4h</p>
+                            <p class="news__card--content-hashes">
+                                Attention #festivallovers see here some outfit #inspiration
+                                #style
+                            </p>
+                            <div class="news__card--likeometer">
+                                <img src="./assets/icons/detail_like.svg" alt=""
+                                    class="news__card--likeometer-heart-icon" />
+                                <p class="news__card--like-counter">99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="news__card--show-more">Mehr Anzeigen</button>
+        </section>
+        <footer class="main__footer">
+            <div class="main__footer--nav-map">
+                <ul class="main__footer--nav">
+                    <li><a class="main_footer--nav-links" href="#">Festivals</a></li>
+                    <li><a class="main_footer--nav-links" href="#">Magazin</a></li>
+                    <li><a class="main_footer--nav-links" href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="main__footer--social">
+                <img src="assets/icons/socialmedia_facebook.svg" onload="SVGInject(this)" class="facebook" />
+                <img src="assets/icons/socialmedia_instagram.svg" onload="SVGInject(this)" class="instagram" />
+                <img src="assets/icons/socialmedia_snapchat.svg" onload="SVGInject(this)" class="snapchat" />
+                <img src="assets/icons/socialmedia_youtube.svg" onload="SVGInject(this)" class="youtube" />
+                <img src="assets/icons/socialmedia_twitter.svg" onload="SVGInject(this)" class="twitter" />
+            </div>
+            <div class="main__footer--bt-arrow">
+                <p class="main__footer--bt-text">Back to Top</p>
+                <img class="main__footer--bt-arrow-icon" src="assets/icons/navigation_zuru╠êck.svg" class="back-to-top"
+                    onload="SVGInject(this)" />
+            </div>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/sound.js"></script>
+</body>
+
+</html>

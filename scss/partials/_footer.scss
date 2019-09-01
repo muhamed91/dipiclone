@@ -1,0 +1,111 @@
+.main__footer {
+    background-color: $white;
+    height: 64px;
+    border-top: 1px solid $greyE5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    @include mobile {
+        flex-direction: column;
+        padding: 25px 0;
+    }
+
+    &--nav {
+        display: flex;
+        list-style-type: none;
+        margin: 0 15px;
+
+
+        a {
+            text-decoration: none;
+            @include copy;
+            text-transform: uppercase;
+            margin: 0 15px;
+            color: $grey;
+        }
+    }
+
+    &--social {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        width: 500px;
+        justify-content: center;
+
+        @include mobile {
+            margin-top: 15px;
+        }
+
+        .facebook,
+        .instagram,
+        .snapchat,
+        .youtube,
+        .twiiter {
+            margin: 0 12px;
+        }
+
+        // SVG ICON
+        .facebook,
+        .instagram,
+        .snapchat,
+        .yt,
+        .twitter {
+            fill: $grey;
+            margin: 0 15px;
+
+
+        }
+    }
+
+    .main__footer--bt-text {
+        @include copy;
+        text-transform: uppercase;
+        color: $grey;
+        display: inline-block;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .main__footer--bt-arrow {
+
+
+        .arrow-top {
+            fill: $grey;
+        }
+
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            margin-left: 15px;
+            position: relative;
+            top: 2px;
+
+            @include mobile {
+                left: 140px;
+                top: -52px;
+            }
+
+
+
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+        }
+    }
+
+
+
+
+
+
+
+
+}

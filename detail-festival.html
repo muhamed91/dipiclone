@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./node_modules/@iconfu/svg-inject/dist/svg-inject.min.js"></script>
+    <title>Festival Lovers</title>
+</head>
+
+<body>
+    <div class="main_wrapper" id="app">
+        <div class="overlay">
+            <div class="navbar__layout-overlay">
+                <nav class="navbar__menu-dark">
+                    <div class="navbar__menu--close">
+                        <img src="assets/icons/navigation_schliessen.svg" onload="SVGInject(this)" alt="close-icon" />
+                    </div>
+                    <a href="#" class="navbar__menu-dark--pointer-dark">Schliessen</a>
+                </nav>
+                <div class="navbar__layout-overlay--brand">
+                    <img src="assets/icons/navigation_logo.svg" onload="SVGInject(this)" alt="festival-lovers"
+                        class="navbar__layout-overlay--brand--logo" />
+                </div>
+                <div class="navbar__layout-overlay--login">
+                    <img src="assets/icons/navigation_login.svg" alt="login-pic" class="login-avatar"
+                        onload="SVGInject(this)" />
+                    <a href="#" class="navbar__layout-overlay--login--pointer">Login</a>
+                </div>
+                <div class="navbar__layout-overlay--ticket">
+                    <a href="#">
+                        <div class="navbar__layout-overlay--ticket--seller">
+                            <img src="assets/icons/navigation_ticketkauf.svg" alt="ticket-kauf"
+                                onload="SVGInject(this)" />
+                        </div>
+                    </a>
+                    <a href="#" class="navbar__layout-overlay--ticket--pointer">Tickets Kaufen</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar__overlay-list-wrapper">
+            <ul class="navbar__layout-overlay-list">
+                <li class="navbar__layout-overlay-list-items">
+                    <a class="navbar__layout-overlay-list-items-anchor" href="festivals.html">Festivals</a>
+                </li>
+                <li class="navbar__layout-overlay-list-items">
+                    <a class="navbar__layout-overlay-list-items-anchor" href="#"></a>Magazin
+                </li>
+                <li class="navbar__layout-overlay-list-items">
+                    <a class="navbar__layout-overlay-list-items-anchor" href="#"></a>News
+                </li>
+            </ul>
+            <div class="navbar__overlay-footer">
+                <div class="navbar__overlay-footer--socialmedia">
+                    <img src="assets/icons/socialmedia_facebook.svg" onload="SVGInject(this)" class="facebook" />
+                    <img src="assets/icons/socialmedia_instagram.svg" onload="SVGInject(this)" class="instagram" />
+                    <img src="assets/icons/socialmedia_snapchat.svg" onload="SVGInject(this)" class="snapchat" />
+                    <img src="assets/icons/socialmedia_youtube.svg" onload="SVGInject(this)" class="youtube" />
+                    <img src="assets/icons/socialmedia_twitter.svg" onload="SVGInject(this)" class="twitter" />
+                </div>
+                <div class="navbar__overlay-footer--searchfield">
+                    <form action="" class="navbar__overlay-footer--searchfield-input-text">
+                        <input type="text" name="search" />
+                        <img src="assets/icons/navigation_suche.svg" onload="SVGInject(this)" alt="search-icon"
+                            class="search-loop" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Overlay toggle when the Ham-btn get clicked -->
+        <header class="navbar__layout">
+            <nav class="navbar__menu">
+                <div class="navbar__menu--hamburger">
+                    <img src="assets/icons/navigation_menu.svg" onload="SVGInject(this)" alt="nav-menu" />
+                </div>
+                <a href="#" class="navbar__menu--pointer">Menu</a>
+            </nav>
+            <div class="navbar__layout--brand">
+                <img src="assets/icons/navigation_logo.svg" alt="festival-lovers" class="navbar__layout--brand--logo" />
+            </div>
+            <div class="navbar__layout--login">
+                <img src="assets/icons/navigation_login.svg" alt="login-pic" class="login-avatar"
+                    onload="SVGInject(this)" />
+                <a href="#" class="navbar__layout--login--pointer">Login</a>
+            </div>
+            <div class="navbar__layout--ticket">
+                <a href="#">
+                    <div class="navbar__layout--ticket--seller">
+                        <img src="assets/icons/navigation_ticketkauf.svg" alt="ticket-kauf" onload="SVGInject(this)" />
+                    </div>
+                </a>
+                <a href="#" class="navbar__layout--ticket--pointer">Tickets Kaufen</a>
+            </div>
+        </header>
+        <div class="big__teaser--festival">
+        </div>
+        <div class="big__teaser--festival-border">
+            <h1 class="big__teaser--festival-heading">Sur Le Lac <br>
+                ein kleines <br>
+                Fest der Musik</h1>
+        </div>
+        <div class="big__teaser--festival-countdown">
+            <div class="big__teaser--festival-countdown--day">
+                <h2 class="big__teasser--festival-countdown--day text-content">Countdown</h2>
+                <h3 class="big__teasser--festival-countdown--day text-content-number">7 Tage</h3>
+            </div>
+            <div class="big__teaser--festival-countdown--tickets">
+                <h2 class="big__teasser--festival-countdown--tickets text-content">Übrige Tickets</h2>
+                <h3 class="big__teasser--festival-countdown--tickets text-content-number">43</h3>
+            </div>
+            <div class="big__teaser--festival-countdown--hours">
+                <h2 class="big__teasser--festival-countdown--hours text-content">Stunden</h2>
+                <h3 class="big__teasser--festival-countdown--horus text-content-number">26</h3>
+            </div>
+            <div class="big__teaser--festival-countdown--visitors">
+                <h2 class="big__teasser--festival-countdown--hours text-content">Besucher</h2>
+                <h3 class="big__teasser--festival-countdown--horus text-content-number">15`000</h3>
+            </div>
+        </div>
+        <section class="info__fesstival">
+            <div class="navbar__layout--breadcrumb">
+                <div class="navbar__layout--breadcrumb--flex-wrapper">
+                    <img src="assets/icons/navigation_home.svg" alt="home-navigation" onload="SVGInject(this)"
+                        class="breadcrumb-icon">
+                    <img src="assets/icons/steuerung_pfeil_rechts.svg" onload="SVGInject(this)" alt="pfeil-rechts"
+                        class="breadcrumb-arrow-right">
+                    <p class="breadcrumb-current-section">Festivals</p>
+                    <div class="round-arrow">
+                        <img src="assets/icons/steuerung_dropdown.svg" onload="SVGInject(this)" alt=" pfeil-unten"
+                            class="breadcrumb-arrow-down">
+                    </div>
+                    <img src="assets/icons/steuerung_pfeil_rechts.svg" onload="SVGInject(this)" alt="pfeil-rechts"
+                        class="breadcrumb-arrow-right">
+                    <p class="breadcrumb-current-section">Sure le Lac</p>
+                    <div class="round-arrow">
+                        <img src="assets/icons/steuerung_dropdown.svg" onload="SVGInject(this)" alt=" pfeil-unten"
+                            class="breadcrumb-arrow-down">
+                    </div>
+                </div>
+            </div>
+            <div class="info__festival--about-container">
+                <div class="info__festival--about">
+                    <h2 class="info__festival--main-title festival-heading">
+                        Spannende, innovative und progressive Musik
+                    </h2>
+                    <h4 class="info__festival-date-location">
+                        <img src="assets/icons/detail_place.svg" alt="location-mark"
+                            class="info__festival-location-icon">
+                        <span class="info__festival--location"> Eggersriet SG</span>
+                        <img src="assets/icons/detail_kalender.svg" alt="location-mark"
+                            class="info__festival-location-icon">
+                        Fr, 13. - So, 15. Aug 2016
+                    </h4>
+                    <p class="info__festival--short-desc">
+                        Das eintätige Festival präsentiert Künstler, welche sich im Spannungsfeld zwischen
+                        verschiedensten musikalischen Strömungen und Einflüssen bewegen. Wir bieten Musikern, die sich
+                        für spannende, innovative und progressive Musik einsetzen eine Plattform. Das Fest findet mit
+                        einem atemberaubenden Ausblick über den Bodensee auf der Eggersrieter Höhe statt.
+                    </p>
+                    <p class="info__festival--long-desc">
+                        Wir bieten euch auf dem Gelände verschiedenste Freuden für Gaumen und Kehle. Ob orientalischer
+                        Falafel oder Käseplättli mit einem Glas Wein kredenzt, marokkanische Teespezialität oder
+                        klassischer Schüblig vom Grill. Es sollte für jeden Geschmack etwas dabei sein. Um die Angebote
+                        zu sehr fairen Preisen und auch den Eintritt in diesem Rahmen beibehalten zu können, bitten wir
+                        euch auf das Mitbringen von Getränken und Lunchpäcklis jeglicher Art zu verzichten. Vielen Dank
+                        für eure Unterstützung und mit unserem kulinarischen Genuss wird das Fest bestimmt
+                        unvergesslich.
+                        Der Verein "Sur le Lac", welcher non-profit agiert, organisiert seit 2008 das "Sur le Lac – Ein
+                        kleines Fest der Musik". Das eintägige Festival präsentiert Künstler, welche sich im
+                        Spannungsfeld zwischen verschiedensten musikalischen Strömungen und Einflüssen bewegen. An einem
+                        Festival herrscht ein ständig hoher Lärmpegel. Schützt euer Gehör mit den überall auf dem
+                        Festgelände gratis erhältlichen Oropax.
+                    </p>
+                    <div class="info__festival-carousel">
+                        <button class="info__festival-carousel-button--left btn is-hidden">
+                            <img src="assets/icons/steuerung_pfeil_links.svg" alt="left">
+                        </button>
+                        <div class="info__festival-carousel-track-container">
+                            <ul class="info__festival-carousel-track">
+                                <li class="info__festival-slide current-slide">
+                                    <img class="info__festival-carousel-images" src="assets/img/slides//festival-1.jpg"
+                                        alt="festival_one">
+                                </li>
+                                <li class="info__festival-slide">
+                                    <img class="info__festival-carousel-images" src="assets/img/slides/festival-2.jpg"
+                                        alt="festival_two">
+                                </li>
+                                <li class="info__festival-slide">
+                                    <img class="info__festival-carousel-images" src="assets/img/slides/festival-3.jpg"
+                                        alt="festival_three">
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="info__festival-carousel-button--right btn">
+                            <img src="assets/icons/steuerung_pfeil_rechts.svg" alt="right">
+                        </button>
+                        <div class="info__festival-carousel-nav">
+                            <button class="info__festival-carousel-indicator current-slide"></button>
+                            <button class="info__festival-carousel-indicator"></button>
+                            <button class="info__festival-carousel-indicator"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__festival--share-ticket-cont">
+                    <div class="event-list-layout--teaser-reminder">
+                        <input type="checkbox" name="star-icon" class="star-reminder">
+                        <label for="merken" class="event-reminder">Merken</label>
+                    </div>
+                    <a href="checkout.html">
+                        <button class="info__festival--buy-ticket">Tickets Kaufen</button>
+                    </a>
+                    <a href="share-festival.html">
+                        <button class="info__festival--share-ticket">Festival Teilen
+                        </button>
+                    </a>
+                    <div class="info__festival-advertising-box">
+                        <img src="https://via.placeholder.com/200" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line-up">
+            <div class="line-up-wrapper">
+                <h2 class="line-up__title">Line Up</h2>
+                <p class="line-up__description">
+                    Wir freuen uns auch diese Jahr wieder ein spannendes und <br> einzigartiges Line Up präsentieren zu
+                    dürfen. Auf der <br> Hauptbühne wird definitiv viel los sein.</p>
+                <div class="tab-days-content">
+                    <div class="tab-day-name" id="tab-1">
+                        <button class="day-name">Freitag</button>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="tab-day-name" id="tab-2">
+                        <button class="day-name">Samstag</button>
+                        <div class="triangle"></div>
+                    </div>
+                    <div class="tab-day-name" id="tab-3">
+                        <button class="day-name">Sonntag</button>
+                        <div class="triangle"></div>
+                    </div>
+                </div>
+                <div class="event-plan hide">
+                    <div class="event-plan-col">
+                        <div class="event-plan__bands">
+                            <h5 class="event-plan-start">17:00</h5>
+                            <div class="event-plan-band-name hiphop">
+                                <h4>Kero Kero Bonito </h4>
+                            </div>
+                        </div>
+                        <div class="event-plan__bands">
+                            <h5 class="event-plan-start">18:00</h5>
+                            <div class="event-plan-band-name poprock">
+                                <h4>Red Hot Chili Peppers</h4>
+                            </div>
+                        </div>
+                        <div class="event-plan__bands">
+                            <h5 class="event-plan-start">20:00</h5>
+                            <div class="event-plan-band-name indie">
+                                <h4>Tompaul</h4>
+                            </div>
+                        </div>
+                        <div class="event-plan__bands">
+                            <h5 class="event-plan-start">21:00</h5>
+                            <div class="event-plan-band-name hiphop">
+                                <h4>Lauryn Hill</h4>
+                            </div>
+                        </div>
+                        <div class="event-plan__bands">
+                            <h5 class="event-plan-start">22:00</h5>
+                            <div class="event-plan-band-name indie">
+                                <h4>The Horrors</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-plan-col-2">
+                        <div class="event-plan__bands">
+                            <div class="event-plan-band-name indie">
+                                <h4>Darkstar </h4>
+                            </div>
+                        </div>
+                        <div class="event-plan__bands">
+                            <div class="event-plan-band-name hiphop">
+                                <h4>Wu-Tang Clan</h4>
+                            </div>
+                        </div>
+                        <div class="event-plan__bands">
+                            <div class="event-plan-band-name poprock">
+                                <h4>Muse</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="festival-video-taser">
+            <img src="assets/img/Video.png" alt="" class="festival-video">
+            <!-- Play this video Later i Implemented in the Front Page Audio Player with Wonderfull sounds :) -->
+        </div>
+        <div class="information">
+            <h2 class="information-title">Wissenswertes</h2>
+            <p class="information-article">
+                Damit euer Festivalerlebnis glatt verläuft und ihr es in vollen <br> Zügen geniesse könnt, gibt es hier
+                nochmals eine Übersicht mit <br> allem was ihr wissen und beachten müsst.
+            </p>
+            <div class="information-accordion">
+                <h3 class="information-accordion-title">Anresie & Rückreise</h3>
+                <h6 class="information-accordion-trigger">Mehr</h6>
+                <div class="information-accordion-content is-open">
+                    <p class="information-accordion-parag">
+                        Die Anreise ans Sur le Lac gestaltet sich wie folgt und ganz unkompliziert. Wir empfehlen die
+                        öffentlichen Verkehrsmittel zu benützen. Ab Eggersriet Post bringen euch Shuttlebusse direkt
+                        aufs Gelände. Naturverbundenen Besuchern legen wir den 15-minütigen Spaziergang vorbei an Blüten
+                        und Blatt gen Festgelände sehr ans Herz. In der Nacht bringen euch dann stündlich Spezialbusse
+                        sicher und behütet zurück nach St. Gallen. Die Spezialbusse sind im Eintrittspreis inbegriffen.
+                        Besuchern, welche mit Privatautos anreisen, stehen in begrenzter Anzahl Parkplätze unweit des
+                        Festgeländes zur Verfügung. 
+                    </p>
+
+                    <div class="infomratiom-map">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="information-accordion">
+                <h3 class="information-accordion-title">Einlassregeln</h3>
+                <h6 class="information-accordion-trigger">Mehr</h6>
+                <div class="information-accordion-content">
+                    <p class="information-accordion-parag">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi at ipsam earum
+                        reprehenderit odit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta vero,
+                        tenetur voluptas ea id ex ipsum quidem labore rerum in amet iste dolore ducimus, iusto possimus
+                        eaque. Omnis nobis veniam, ipsum provident illum vero voluptatibus velit tempore. Necessitatibus
+                        veniam iure soluta veritatis nulla odio praesentium dicta, quidem odit porro aspernatur illum
+                        iste similique nihil eveniet!
+                    </p>
+                </div>
+            </div>
+            <div class="information-accordion">
+                <h3 class="information-accordion-title">Zelten & Naturschutz</h3>
+                <h6 class="information-accordion-trigger">Mehr</h6>
+                <div class="information-accordion-content">
+                    <p class="information-accordion-parag">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi at ipsam earum
+                        reprehenderit odit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta vero,
+                        tenetur voluptas ea id ex ipsum quidem labore rerum in amet iste dolore ducimus, iusto possimus
+                        eaque. Omnis nobis veniam, ipsum provident illum vero voluptatibus velit tempore. Necessitatibus
+                        veniam iure soluta veritatis nulla odio praesentium dicta, quidem odit porro aspernatur illum
+                        iste similique nihil eveniet!
+                    </p>
+                </div>
+            </div>
+            <div class="information-accordion">
+                <h3 class="information-accordion-title">Fragen & Antworten</h3>
+                <h6 class="information-accordion-trigger">Mehr</h6>
+                <div class="information-accordion-content">
+                    <p class="information-accordion-parag">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi at ipsam earum
+                        reprehenderit odit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta vero,
+                        tenetur voluptas ea id ex ipsum quidem labore rerum in amet iste dolore ducimus, iusto possimus
+                        eaque. Omnis nobis veniam, ipsum provident illum vero voluptatibus velit tempore. Necessitatibus
+                        veniam iure soluta veritatis nulla odio praesentium dicta, quidem odit porro aspernatur illum
+                        iste similique nihil eveniet!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="share-banner">
+            <h2 class="share-banner-title">Sei eine Teil von Sur Le Lac</h2>
+            <button class="share-banner-button">Tickets kaufen</button>
+            <img class="share-banner-icon" onload="SVGInject(this)" src="assets/icons/music_indie.svg" alt="indie">
+        </div>
+        <div class="show-next-festival">
+            <div class="show-next-festival-box">
+                <img src="assets/icons/navigation_backtotop.svg" onload="SVGInject(this)" alt="arrow"
+                    class="prev-festival-arrow">
+                <h3 class="show-next-festival-title">Musikfestwochen</h3>
+                <img src="assets/img/previous.png" alt="next-festival" class="previous-festival-mini-teaser">
+            </div>
+            <div class="show-next-festival-box">
+                <img src="assets/img/next.png" alt="next-festival" class="previous-festival-mini-teaser">
+                <h3 class="show-next-festival-title">Openair Zürich</h3>
+                <img src="assets/icons/navigation_backtotop.svg" onload="SVGInject(this)" alt="arrow"
+                    class="next-festival-arrow">
+            </div>
+        </div>
+        <footer class="main__footer">
+            <div class="main__footer--nav-map">
+                <ul class="main__footer--nav">
+                    <li><a class="main_footer--nav-links" href="#">Festivals</a></li>
+                    <li><a class="main_footer--nav-links" href="#">Magazin</a></li>
+                    <li><a class="main_footer--nav-links" href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="main__footer--social">
+                <img src="assets/icons/socialmedia_facebook.svg" onload="SVGInject(this)" class="facebook" />
+                <img src="assets/icons/socialmedia_instagram.svg" onload="SVGInject(this)" class="instagram" />
+                <img src="assets/icons/socialmedia_snapchat.svg" onload="SVGInject(this)" class="snapchat" />
+                <img src="assets/icons/socialmedia_youtube.svg" onload="SVGInject(this)" class="youtube" />
+                <img src="assets/icons/socialmedia_twitter.svg" onload="SVGInject(this)" class="twitter" />
+            </div>
+            <div class="main__footer--bt-arrow">
+                <p class="main__footer--bt-text">Back to Top</p>
+                <img class="main__footer--bt-arrow-icon" src="assets/icons/navigation_zuru╠êck.svg" class="back-to-top"
+                    onload="SVGInject(this)" />
+            </div>
+        </footer>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1xEN9-IzndPXTqSvAT8Pd31LGHOI1b4s&callback=initMap"
+        async defer></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/sound.js"></script>
+    <script src="./js/fetch_api.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/gMap.js"></script>
+</body>
+
+</html>

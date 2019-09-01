@@ -1,0 +1,67 @@
+@import "partials/colors";
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/navbar";
+@import "partials/filter-teaser";
+@import "partials/magazin";
+@import "partials/advertising-banner";
+@import "partials/discovery";
+@import "partials/news";
+@import "partials/footer";
+@import "partials/navbar-overlay";
+@import "partials/breadcrumb";
+@import "partials/filter-options";
+@import "partials/grid-boxes";
+@import "partials/event-list";
+@import "partials/detail-teaser--description.scss";
+@import "partials/carousel.scss";
+@import "partials/lineup-tabs.scss";
+@import "partials/accordion.scss";
+@import "partials/share-banner.scss";
+@import "partials/social-media-sharing.scss";
+@import "partials/ticket-corner.scss";
+
+
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+}
+
+.main_wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+
+
+
+
+
+    @media screen and (max-width:1400px) {
+        width: auto;
+    }
+
+}
+
+.show-link {
+    text-decoration: none;
+    color: black;
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.indie {
+    border-right: none;
+}
